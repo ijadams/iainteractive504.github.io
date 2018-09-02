@@ -4,7 +4,7 @@ const config        = require('../frasco.config.js')
 const gulp          = require('gulp');
 const named         = require('vinyl-named');
 const plumber       = require('gulp-plumber');
-const uglify        = require('gulp-uglify');
+const uglify        = require('gulp-uglify-es').default;
 const webpackStream = require('webpack-stream');
 const webpack       = require('webpack');
 

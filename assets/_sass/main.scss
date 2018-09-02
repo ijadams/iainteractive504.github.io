@@ -1,2 +1,72 @@
-@charset "UTF-8";
-@import "minima";
+@import 'variables';
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-family: 'favorit';
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+main {
+	height: 100%;
+	width: 100%;
+}
+
+section {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	&.active {
+		z-index: 10 !important;
+	}
+	.container {
+		height: 100%;
+		width: 100%;
+		display: flex;
+	}
+	.left, .right {
+		flex: 1;
+		transition: 1s cubic-bezier(0.420, 0.000, 0.600, 0.985);
+	}
+	.left {
+		cursor: url('../images/arrow-l-w.png'), pointer;
+		&.leave {
+			transform: translateY(100%);
+		}
+		&.black {
+			cursor: url('../images/arrow-l-b.png'), pointer;
+		}
+	}
+	.right {
+		cursor: url('../images/arrow-r-w.png'), pointer;
+		&.leave {
+			transform: translateY(-100%);
+		}
+		&.black {
+			cursor: url('../images/arrow-r-b.png'), pointer;
+		}
+	}
+}
+
+@import 'navigation';
+@import 'footer';
+@import 'syntaxHighlighter';
+@import 'intro';
+@import 'one';

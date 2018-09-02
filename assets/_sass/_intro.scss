@@ -1,0 +1,30 @@
+//intro
+#intro {
+	z-index: 0;
+	img {
+		max-width: 300px;
+	}
+    .right {
+		background: black;
+		display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .left {
+		background: black;
+		display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: default;
+    }
+	@media screen and (max-width: 768px) {
+		img {
+			max-width: 225px;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		img {
+			max-width: 150px;
+		}
+	}
+}
