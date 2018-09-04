@@ -5,7 +5,7 @@ $(document).ready(function () {
 
   let activeIndex = 0;
   let animating = false;
-
+  let sectionLength = $('section').length;
 
   // LEFT PREV CLICK
   $('.left').click(() => {
@@ -24,10 +24,12 @@ $(document).ready(function () {
   });
 
   const navigate = (action) => {
-    if (action === 'next') {
-      leave();
-    } else if (action === 'previous' && activeIndex == 0) {
+    if (action === 'previous' && activeIndex == 0) {
       activeIndex = 0;
+    } else if (action === 'next' && (activeIndex === (sectionLength - 1))) {
+      activeIndex = sectionLength - 1;
+    } else if (action === 'next') {
+      leave();
     } else if (action === 'previous') {
       enter();
     }

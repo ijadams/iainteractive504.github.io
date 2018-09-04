@@ -1,6 +1,9 @@
 //intro
 #intro {
 	z-index: 0;
+	&.active {
+		z-index: 12 !important;
+	}
 	img {
 		max-width: 300px;
 	}
