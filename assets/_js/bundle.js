@@ -1,10 +1,7 @@
 $(document).ready(function () {
 
   // SMOOTH PAGE LOAD
-  $('body').addClass('loaded');
-  setTimeout(() => {
-    $('.loader').addClass('hidden');
-  });
+  $('body').removeClass('fade-out');
 
   // NAV BAR
   $('.menu-collapsed').click(function() {

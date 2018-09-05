@@ -5,14 +5,19 @@
 
   <body>
 
-    {%- include header.html -%}
+	<script>document.body.className += ' fade-out';</script>
+	
+	<div id="mega-container" style="display: none;">
+		{%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-        {{ content }}
-    </main>
+		<main  class="page-content" aria-label="Content">
+			{{ content }}
+		</main>
 
-    {%- include footer.html -%}
+	</div>
 
-  </body>
+		{%- include footer.html -%}
+
+	</body>
 
 </html>
