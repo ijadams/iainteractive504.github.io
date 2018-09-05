@@ -21,6 +21,35 @@ body {
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
+	opacity: 0;
+	transition: opacity 0.4s ease-in;
+	h1, h2, h3, h4, h5, p {
+		font-family: 'favorit';
+	}
+	&.loaded {
+		opacity: 1;
+	}
+	header {
+		transition: color 0.3s ease-in-out;
+	}
+	&.dark {
+		header {
+			color: black !important;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		overflow-y: scroll;
+		header {
+			position: fixed;
+			z-index: 20;
+		}
+		section {
+			position: relative;
+			display: block;
+			height: 100vh;
+			width: 100%;
+		}
+	}
 }
 
 main {
@@ -35,6 +64,11 @@ section {
 	top: 0;
 	&.active {
 		z-index: 10 !important;
+	}
+	&.dark {
+		.description {
+			color: black;
+		}
 	}
 	.container {
 		height: 100%;
@@ -61,6 +95,32 @@ section {
 		}
 		&.black {
 			cursor: url('../images/arrow-r-b.png'), pointer;
+		}
+	}
+	.description {
+		position: absolute;
+		bottom: 2rem;
+		width: 100%;
+		padding: 0 5rem;
+		text-align: center;
+		font-size: 1.5rem;
+		color: white;
+		transition: 1s ease-out;
+		@media screen and (max-width: 768px) {
+			padding: 0 2rem;
+			p {
+				margin: 0 auto;
+			}
+		}
+		&.leave {
+			transform: translateY(150px);
+		}
+		p {
+			display: inline-block;
+			&:first-of-type {
+				text-transform: uppercase;
+				margin-right: 2rem;
+			}
 		}
 	}
 }

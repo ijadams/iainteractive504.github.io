@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+  // SMOOTH PAGE LOAD
+  $('body').addClass('loaded');
+
+  // NAV BAR
+  $('.menu-collapsed').click(function() {
+    $(this).toggleClass('menu-expanded');
+  });
+
   // NAVIGATION LOGIC
   $('#intro').addClass('active');
 
@@ -9,7 +17,7 @@ $(document).ready(function () {
 
   // LEFT PREV CLICK
   $('.left').click(() => {
-    if (!animating) {
+    if (!animating && isDesktop()) {
       animating = true;
       navigate('previous');
     }
@@ -17,7 +25,7 @@ $(document).ready(function () {
 
   // RIGHT NEXT CLICK
   $('.right').click(() => {
-    if (!animating) {
+    if (!animating && isDesktop()) {
       animating = true;
       navigate('next');
     }
@@ -33,12 +41,13 @@ $(document).ready(function () {
     } else if (action === 'previous') {
       enter();
     }
-    animating = false;
+    setTimeout(() => removeActiveClass(), 1000);
   };
 
   const leave = () => {
     $('section.active .left').addClass('leave');
     $('section.active .right').addClass('leave');
+    $('section.active .description').addClass('leave');
     activeIndex += 1;
     setTimeout(() => removeActiveClass(), 1000);
   };
@@ -48,11 +57,27 @@ $(document).ready(function () {
     removeActiveClass();
     $('section.active .left').removeClass('leave');
     $('section.active .right').removeClass('leave');
+    $('section.active .description').removeClass('leave');
   };
 
   const removeActiveClass = () => {
     $('section.active').removeClass('active');
     $('section').eq(activeIndex).addClass('active');
+    colorize();
+    animating = false;
+  };
+
+  const colorize = () => {
+    if ($('section.active').hasClass('dark')) {
+      $('body').addClass('dark');
+    } else {
+      $('body').removeClass('dark');
+    }
+  };
+
+  const isDesktop = () => {
+    let width = $(window).width();
+    return width > 768;
   };
 
 });
