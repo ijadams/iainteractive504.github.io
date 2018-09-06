@@ -4,11 +4,19 @@ $(document).ready(function () {
   $('body').removeClass('fade-out');
 
   // NAV BAR
-  $('.menu-collapsed').click(function() {
-    $(this).toggleClass('menu-expanded');
+  $('#toggle').click(function() {
+    $(this).toggleClass('active');
+    $('#overlay').toggleClass('open');
   });
 
-  // NAVIGATION LOGIC
+  $(document).keyup(function(e) {
+    if ($('#overlay').hasClass('open')) {
+      $('button_container').toggleClass('active');
+      $('#overlay').toggleClass('open');
+    }
+  });
+
+  // ANIMATION LOGIC
   $('#intro').addClass('active');
 
   let activeIndex = 0;
