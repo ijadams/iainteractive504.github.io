@@ -10,6 +10,7 @@ header {
 	padding: 2rem 4rem;
 	#contact {
 		text-transform: uppercase;
+		transition: color 1s ease-in-out;
 		a {
 			text-decoration: none;
 			color: white;
@@ -68,7 +69,7 @@ body.dark {
 	top: 2rem;
 	left: 2rem;
 	z-index: 10000;
-	transition: .3s ease-in-out;
+	transition: color 1s ease-in-out;
 	&:hover {
 		opacity: .5;
 	}
