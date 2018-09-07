@@ -1,7 +1,7 @@
 @import 'variables';
 
 html {
-	font-size: 62.5%;
+	font-size: 100.5%;
 	height: 100%;
 	box-sizing: border-box;
 	overflow: hidden;
@@ -66,6 +66,9 @@ section {
 	top: 0;
 	&.active {
 		z-index: 10 !important;
+		.description p {
+			opacity: 1;
+		}
 	}
 	&.dark {
 		.description {
@@ -105,9 +108,9 @@ section {
 		width: 100%;
 		padding: 0 5rem;
 		text-align: center;
-		font-size: 1.5rem;
+		font-size: 0.75rem;
 		color: white;
-		transition: 1s ease-out;
+		transition: 0.8s ease-out;
 		@media screen and (max-width: 768px) {
 			padding: 0 2rem;
 			p {
@@ -115,10 +118,14 @@ section {
 			}
 		}
 		&.leave {
-			transform: translateY(150px);
+			p {
+				opacity: 0;
+			}
 		}
 		p {
 			display: inline-block;
+			transition: 0.5s ease-out;
+			opacity: 0;
 			&:first-of-type {
 				text-transform: uppercase;
 				margin-right: 2rem;

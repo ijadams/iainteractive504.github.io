@@ -7,7 +7,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 1rem 4rem;
+	padding: 2rem 4rem;
 	#contact {
 		text-transform: uppercase;
 		a {
@@ -39,7 +39,7 @@ header {
 	}
 	h1 {
 		letter-spacing: 1px;
-		font-size: 3rem;
+		font-size: 1rem;
 	}
 }
 
@@ -47,8 +47,9 @@ $color-background: #F5F5F5;
 $color-main: white;
 $color-active: black;
 $color-link: black;
-$button-height: 27px;
-$button-width: 35px;
+$button-height: 1rem;
+$button-width: 2rem;
+$span-height: 8px;
 
 body.dark {
 	.button_container span {
@@ -64,8 +65,8 @@ body.dark {
 	width: $button-width;
 	cursor: pointer;
 	position: fixed;
-	top: 2.4rem;
-	left: 3rem;
+	top: 2rem;
+	left: 2rem;
 	z-index: 10000;
 	transition: .3s ease-in-out;
 	&:hover {
@@ -74,7 +75,7 @@ body.dark {
 
 	&.active {
 		.top {
-			transform: translateY(11px) translateX(0) rotate(45deg);
+			transform: translateY($span-height) translateX(0) rotate(45deg);
 			background: $color-active;
 		}
 		.middle {
@@ -83,7 +84,7 @@ body.dark {
 		}
 
 		.bottom {
-			transform: translateY(-11px) translateX(0) rotate(-45deg);
+			transform: translateY(-$span-height) translateX(0) rotate(-45deg);
 			background: $color-active;
 		}
 	}
@@ -91,7 +92,7 @@ body.dark {
 	span {
 		background: $color-main;
 		border: none;
-		height: 5px;
+		height: 2px;
 		width: 100%;
 		position: absolute;
 		top: 0;
@@ -100,11 +101,11 @@ body.dark {
 		cursor: pointer;
 
 		&:nth-of-type(2) {
-			top: 11px;
+			top: $span-height;
 		}
 
 		&:nth-of-type(3) {
-			top: 22px;
+			top: $span-height * 2;
 		}
 	}
 }
@@ -127,7 +128,7 @@ body.dark {
 
 	.text {
 		font-weight: 700;
-		font-size: 4rem;
+		font-size: 1rem;
 		max-width: 75%;
 		a {
 			text-decoration: none;
@@ -164,7 +165,7 @@ body.dark {
 		height: 70%;
 		top: 50%;
 		transform: translateY(-50%);
-		font-size: 50px;
+		font-size: 1rem;
 		font-weight: 400;
 		text-align: center;
 		text-transform: uppercase;

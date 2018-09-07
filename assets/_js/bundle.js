@@ -74,7 +74,6 @@ $(document).ready(function () {
   });
 
   const navigate = (action) => {
-    console.log('activeIndex', activeIndex);
     if (action === 'previous' && activeIndex == 0) {
       activeIndex = 0;
     } else if (action === 'next' && (activeIndex === (sectionLength - 1))) {
@@ -90,7 +89,9 @@ $(document).ready(function () {
   const leave = () => {
     $('section.active .left').addClass('leave');
     $('section.active .right').addClass('leave');
-    $('section.active .description').addClass('leave');
+    setTimeout(() => {
+      $('section.active .description').addClass('leave');
+    }, 300);
     activeIndex += 1;
     setTimeout(() => removeActiveClass(), 1000);
   };
@@ -100,7 +101,9 @@ $(document).ready(function () {
     removeActiveClass();
     $('section.active .left').removeClass('leave');
     $('section.active .right').removeClass('leave');
-    $('section.active .description').removeClass('leave');
+    setTimeout(() => {
+      $('section.active .description').removeClass('leave');
+    }, 1000);
   };
 
   const removeActiveClass = () => {
