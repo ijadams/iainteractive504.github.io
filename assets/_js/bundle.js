@@ -39,7 +39,42 @@ $(document).ready(function () {
     }
   });
 
+  // scroll animation logic
+  $(window).on('scroll', (e) => {
+    if (isDesktop()) {
+      e.preventDefault();
+    }
+  });
+
+  let scroll = {
+    isThrottled: false,
+    throttleDuration: 1100,
+  };
+
+  $(window).on('mousewheel', (e) => {
+    if (isDesktop()) {
+      e.preventDefault();
+      if (scroll.isThrottled) {
+        return;
+      }
+      scroll.isThrottled = true;
+      setTimeout(() => {
+        scroll.isThrottled = false;
+      }, scroll.throttleDuration);
+      if (!animating) {
+        if (e.originalEvent.wheelDelta > 0) {
+          animating = true;
+          navigate('previous');
+        } else {
+          animating = true;
+          navigate('next');
+        }
+      }
+    }
+  });
+
   const navigate = (action) => {
+    console.log('activeIndex', activeIndex);
     if (action === 'previous' && activeIndex == 0) {
       activeIndex = 0;
     } else if (action === 'next' && (activeIndex === (sectionLength - 1))) {
