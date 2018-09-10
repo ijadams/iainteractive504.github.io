@@ -11,3 +11,6 @@ fields:
 - type: file
   name: image_left
   label: Image Left
+- type: file
+  name: image_right
+  label: image right
