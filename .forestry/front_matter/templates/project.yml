@@ -1,0 +1,10 @@
+---
+label: project
+hide_body: true
+is_partial: true
+fields:
+- type: text
+  label: Description
+  name: description
+  config:
+    required: true
