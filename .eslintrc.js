@@ -16,7 +16,8 @@ module.exports = {
     'space-before-function-paren': 'off',
     'padded-blocks': 'off',
     'no-unused-vars': 'warn',
-    'no-invalid-this': 'off'
+    'no-invalid-this': 'off',
+    'max-len': 'off'
   },
   'parserOptions': {
     'sourceType': 'module'
