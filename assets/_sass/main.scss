@@ -94,7 +94,6 @@ section {
 			position: absolute;
 			display: flex;
 			opacity: 0;
-			transition: 0.33s ease-out;
 			&.active {
 				opacity: 1;
 			}

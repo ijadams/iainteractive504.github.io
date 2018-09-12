@@ -141,7 +141,6 @@ $(document).ready(function () {
     active.removeClass('active');
     next.addClass('active');
     next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
-    $('section.active .trans-overlay').removeClass('active');
   };
 
 });
