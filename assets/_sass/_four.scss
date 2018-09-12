@@ -1,14 +1,14 @@
 #four {
 	z-index: -4;
 	.left {
-		cursor: url('../images/arrow-l-b.png'), pointer;
-		background: url('../images/section-four_01.jpg') no-repeat;
+		cursor: url('../images/arrow-l-w.png'), pointer;
+		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: right;
 	}
 	.right {
-		cursor: url('../images/arrow-r-b.png'), pointer;
-		background: url('../images/section-four_02.jpg') no-repeat;
+		cursor: url('../images/arrow-r-w.png'), pointer;
+		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: left;
 	}

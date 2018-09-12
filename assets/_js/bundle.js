@@ -114,7 +114,7 @@ $(document).ready(function () {
   };
 
   const colorize = () => {
-    if ($('section.active').hasClass('dark')) {
+    if ($('section.active').hasClass('dark') || $('section.active ul li.active').hasClass('dark')) {
       $('body').addClass('dark');
     } else {
       $('body').removeClass('dark');
@@ -124,6 +124,24 @@ $(document).ready(function () {
   const isDesktop = () => {
     let width = $(window).width();
     return width > 768;
+  };
+
+  // PAGINATION LOGIC
+  $('.more').click(() => {
+    $('section.active .trans-overlay').addClass('active');
+    toggleSlide();
+  });
+
+  const toggleSlide = () => {
+    let active = $('section.active ul li.active');
+    let next = active.next();
+    if (next.length === 0) {
+      next = $('section.active ul li:first');
+    }
+    active.removeClass('active');
+    next.addClass('active');
+    next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
+    $('section.active .trans-overlay').removeClass('active');
   };
 
 });
