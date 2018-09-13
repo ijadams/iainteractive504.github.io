@@ -19,12 +19,33 @@ fields:
 - type: image_gallery
   name: slide_1
   label: slide 1
+- type: boolean
+  name: slide_1_dark_toggle
+  label: Slide 1 Dark Toggle
 - type: image_gallery
   label: slide 2
   name: slide_2
+- type: boolean
+  name: slide_2_dark_toggle
+  label: Slide 2 Dark Toggle
 - type: image_gallery
   name: slide_3
   label: slide 3
+- type: boolean
+  name: slide_3_dark_toggle
+  label: Slide 3 Dark Toggle
+- type: image_gallery
+  name: slide_4
+  label: slide 4
+- type: boolean
+  name: slide_4_dark_toggle
+  label: Slide 4 Dark Toggle
+- type: image_gallery
+  name: slide_5
+  label: slide 5
+- type: boolean
+  name: slide_5_dark_toggle
+  label: Slide 5 Dark Toggle
 pages:
 - _posts/2018-09-13-project-1.md
 - _posts/2018-09-13-project-1.md
