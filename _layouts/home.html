@@ -2,6 +2,33 @@
 layout: default
 ---
 {%- include intro.html -%}
+
+<!--{% for post in site.posts %}-->
+<!--<section id="one">-->
+	<!--<div class="container">-->
+		<!--<div class="more"></div>-->
+		<!--<ul>-->
+			<!--{% for image in post.project_gallery %}-->
+					<!--{% if forloop.first %}-->
+					<!--<li class="active">-->
+						<!--{% else %}-->
+					<!--<li>-->
+					<!--{% endif %}-->
+					<!--<div class="left" style="background-image: url('{{ image }}');">-->
+					<!--</div>-->
+					<!--<div class="right" style="background-image: url('{{ image }}');">-->
+					<!--</div>-->
+				<!--</li>-->
+			<!--{% endfor %}-->
+		<!--</ul>-->
+		<!--<div class="description">-->
+			<!--<p>{{ post.project_title }}</p>-->
+			<!--<p>{{ post.description }}</p>-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</section>-->
+<!--{% endfor %}-->
+
 {%- include section-one.html -%}
 {%- include section-two.html -%}
 {%- include section-three.html -%}

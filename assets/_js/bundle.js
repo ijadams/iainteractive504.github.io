@@ -127,6 +127,7 @@ $(document).ready(function () {
   };
 
   // PAGINATION LOGIC
+
   $('.more').click(() => {
     $('section.active .trans-overlay').addClass('active');
     toggleSlide();
