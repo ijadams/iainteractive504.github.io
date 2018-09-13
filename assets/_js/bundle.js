@@ -26,16 +26,14 @@ $(document).ready(function () {
   // LEFT PREV CLICK
   $('.left').click(() => {
     if (!animating && isDesktop()) {
-      animating = true;
-      navigate('previous');
+      toggleSlide('previous');
     }
   });
 
   // RIGHT NEXT CLICK
   $('.right').click(() => {
     if (!animating && isDesktop()) {
-      animating = true;
-      navigate('next');
+      toggleSlide('next');
     }
   });
 
@@ -126,22 +124,32 @@ $(document).ready(function () {
     return width > 768;
   };
 
-  // PAGINATION LOGIC
-
+  // Center Click
   $('.more').click(() => {
-    $('section.active .trans-overlay').addClass('active');
-    toggleSlide();
+    console.log('more');
   });
 
-  const toggleSlide = () => {
-    let active = $('section.active ul li.active');
-    let next = active.next();
-    if (next.length === 0) {
-      next = $('section.active ul li:first');
+  // PAGINATION LOGIC
+  const toggleSlide = (direction) => {
+    if (direction === 'next') {
+      let active = $('section.active ul li.active');
+      let next = active.next();
+      if (next.length === 0) {
+        next = $('section.active ul li:first');
+      }
+      active.removeClass('active');
+      next.addClass('active');
+      next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
+    } else if (direction === 'previous') {
+      let active = $('section.active ul li.active');
+      let prev = active.prev();
+      if (prev.length === 0) {
+        prev = $('section.active ul li:last');
+      }
+      active.removeClass('active');
+      prev.addClass('active');
+      prev.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
     }
-    active.removeClass('active');
-    next.addClass('active');
-    next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
   };
 
 });
