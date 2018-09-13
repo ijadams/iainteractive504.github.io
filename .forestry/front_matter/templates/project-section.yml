@@ -1,0 +1,22 @@
+---
+label: Project Section
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  label: Project Title
+  name: project_title
+  description: This field goes to left of the sentence describing the project
+- type: text
+  name: description
+  label: Description
+  config:
+    required: true
+  description: This field goes to the right of the project tite
+- type: image_gallery
+  label: Project gallery
+  name: project_gallery
+  description: Upload projects here
+- type: boolean
+  name: is_dark_theme
+  label: Is dark theme
