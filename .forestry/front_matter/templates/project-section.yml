@@ -20,3 +20,5 @@ fields:
 - type: boolean
   name: is_dark_theme
   label: Is dark theme
+pages:
+- _posts/project-2.md
