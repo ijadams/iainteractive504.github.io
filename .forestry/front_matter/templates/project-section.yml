@@ -7,19 +7,31 @@ fields:
   label: Project Title
   name: project_title
   description: This field goes to left of the sentence describing the project
+  default: BLAAAH Magazine.
 - type: text
   name: description
   label: Description
   config:
     required: true
   description: This field goes to the right of the project tite
+  default: Art Direction and photography for an online editorial. The series highlights
+    a collection of gold jewelry perfect for summer.
 - type: image_gallery
-  label: Project gallery
-  name: project_gallery
-  description: Upload projects here
-- type: boolean
-  name: is_dark_theme
-  label: Is dark theme
+  default:
+  - "/uploads/section-one_01.jpg"
+  - "/uploads/section-one_02.jpg"
+- type: image_gallery
+  default:
+  - "/uploads/section-one-full-2_01.jpg"
+  - "/uploads/section-one-full-2_02.jpg"
+  name: ''
+  label: ''
+- type: image_gallery
+  name: ''
+  label: ''
+  default:
+  - "/uploads/section-one-full-3_01.jpg"
+  - "/uploads/section-one-full-3_02.jpg"
 pages:
 - _posts/project-1.md
 - _posts/2018-09-13-project-1.md
