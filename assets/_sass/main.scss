@@ -104,26 +104,10 @@ section {
 			&.active {
 				opacity: 1;
 			}
-			&:nth-of-type(1) {
-				z-index: 0;
-			}
-			&:nth-of-type(2) {
-				z-index: -1;
-			}
-			&:nth-of-type(3) {
-				z-index: -2;
-			}
-			&:nth-of-type(4) {
-				z-index: -3;
-			}
-			&:nth-of-type(5) {
-				z-index: -4;
-			}
-			&:nth-of-type(6) {
-				z-index: -5;
-			}
-			&:nth-of-type(7) {
-				z-index: -6;
+			@for $i from 0 to $elements {
+				&:nth-of-type(#{$i + 1}) {
+					z-index: #{0 - $i};
+				}
 			}
 		}
 	}
@@ -138,6 +122,9 @@ section {
 	.left, .right {
 		flex: 1;
 		transition: 1s cubic-bezier(0.420, 0.000, 0.600, 0.985);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: left;
 	}
 	.left {
 		cursor: url('../images/arrow-l-w.png'), pointer;
