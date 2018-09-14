@@ -24,7 +24,7 @@ fields:
     max: ''
     step: '1'
     required: true
-    min: '0'
+    min: ''
 - type: image_gallery
   name: slide_1
   label: slide 1
