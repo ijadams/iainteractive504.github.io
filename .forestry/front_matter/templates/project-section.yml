@@ -47,4 +47,5 @@ fields:
   name: slide_5_dark_toggle
   label: Slide 5 Dark Toggle
 pages:
+- _posts/bing-bang-jewelry.md
 - _posts/2018-09-14-blaaah-magazine.md
