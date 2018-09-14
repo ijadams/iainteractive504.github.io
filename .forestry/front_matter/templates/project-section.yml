@@ -46,6 +46,10 @@ fields:
 - type: boolean
   name: slide_5_dark_toggle
   label: Slide 5 Dark Toggle
+- type: number
+  name: sort_order
+  label: Sort Order
+  description: The order of which projects appear (i.e. 1 is first 5 is last)
 pages:
 - _posts/2018-09-14-bing-bang-jewelry.md
 - _posts/2018-09-14-blaaah-magazine.md
