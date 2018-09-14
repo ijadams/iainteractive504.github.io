@@ -16,15 +16,6 @@ fields:
   description: This field goes to the right of the project tite
   default: Art Direction and photography for an online editorial. The series highlights
     a collection of gold jewelry perfect for summer.
-- type: number
-  label: Sort Order
-  name: sort_order
-  description: Order of projects (i.e. 0 is first 10 would be last)
-  config:
-    max: ''
-    step: '1'
-    required: true
-    min: ''
 - type: image_gallery
   name: slide_1
   label: slide 1
