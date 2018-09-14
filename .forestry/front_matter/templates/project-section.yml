@@ -16,6 +16,10 @@ fields:
   description: This field goes to the right of the project tite
   default: Art Direction and photography for an online editorial. The series highlights
     a collection of gold jewelry perfect for summer.
+- type: number
+  name: sort_order
+  label: Sort Order
+  description: The order of which projects appear (i.e. 1 is first 5 is last)
 - type: image_gallery
   name: slide_1
   label: slide 1
@@ -46,10 +50,6 @@ fields:
 - type: boolean
   name: slide_5_dark_toggle
   label: Slide 5 Dark Toggle
-- type: number
-  name: sort_order
-  label: Sort Order
-  description: The order of which projects appear (i.e. 1 is first 5 is last)
 pages:
 - _posts/2018-09-14-bing-bang-jewelry.md
 - _posts/2018-09-14-blaaah-magazine.md
