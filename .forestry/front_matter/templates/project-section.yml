@@ -21,9 +21,10 @@ fields:
   name: sort_order
   description: Order of projects (i.e. 0 is first 10 would be last)
   config:
-    max: '0'
+    max: ''
     step: '1'
     required: true
+    min: '0'
 - type: image_gallery
   name: slide_1
   label: slide 1
