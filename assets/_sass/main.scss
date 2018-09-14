@@ -68,11 +68,18 @@ main {
 	}
 }
 
+$elements: 15;
+
 section {
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	top: 0;
+	@for $i from 0 to $elements {
+		&.project--slide:nth-of-type(#{$i + 1}) {
+			z-index: #{0 - $i};
+		}
+	}
 	&.active {
 		z-index: 10 !important;
 		.description p {
