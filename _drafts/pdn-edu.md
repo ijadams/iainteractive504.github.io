@@ -1,8 +1,23 @@
 ---
 title: PDN Edu
-project_title: BLAAAH Magazine.
+project_title: PDN Edu
 description: Art Direction and photography for an online editorial. The series highlights
   a collection of gold jewelry perfect for summer.
 date: 2018-09-14 15:04:15 +0000
+sort_order: 2
+slide_1:
+- "/uploads/section-three_01-1.jpg"
+- "/uploads/section-three_02-1.jpg"
+slide_1_dark_toggle: false
+slide_2:
+- "/uploads/section-three_02_01.jpg"
+- "/uploads/section-three_02_02.jpg"
+slide_2_dark_toggle: true
+slide_3: []
+slide_3_dark_toggle: false
+slide_4: []
+slide_4_dark_toggle: false
+slide_5: []
+slide_5_dark_toggle: false
 
 ---
