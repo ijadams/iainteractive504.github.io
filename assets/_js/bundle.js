@@ -27,7 +27,6 @@ $(document).ready(function () {
   // LOAD NEXT SLIDE AS PER MAU REQUEST
   setTimeout(() => {
     if (!animating && activeIndex === 0 && isDesktop()) {
-      console.log('here');
       navigate('next');
     }
   }, 4000);
@@ -138,26 +137,52 @@ $(document).ready(function () {
     // center action goes here
   });
 
+
   // PAGINATION LOGIC
   const toggleSlide = (direction) => {
-    if (direction === 'next') {
-      let active = $('section.active ul li.active');
-      let next = active.next();
-      if (next.length === 0) {
-        next = $('section.active ul li:first');
+    if (isDesktop()) {
+      if (direction === 'next') {
+        let active = $('section.active ul li.active');
+        let next = active.next();
+        if (next.length === 0) {
+          return;
+        }
+        active.addClass('slide-right');
+        next.addClass('active');
+        next.removeClass('slide-left');
+        next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
+        setTimeout(() => active.removeClass('active'), 300);
+      } else if (direction === 'previous') {
+        let active = $('section.active ul li.active');
+        let prev = active.prev();
+        if (prev.length === 0) {
+          return;
+        }
+        active.addClass('slide-left');
+        prev.addClass('active');
+        prev.removeClass('slide-right');
+        prev.addClass('active');
+        prev.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
+        setTimeout(() => active.removeClass('active'), 300);
       }
-      active.removeClass('active');
-      next.addClass('active');
-      next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
-    } else if (direction === 'previous') {
-      let active = $('section.active ul li.active');
-      let prev = active.prev();
-      if (prev.length === 0) {
-        prev = $('section.active ul li:last');
+    } else {
+      if (direction === 'next') {
+        let active = $('section.active ul li.active');
+        let next = active.next();
+        if (next.length === 0) {
+          next = $('section.active ul li:first');
+        }
+        active.removeClass('active');
+        next.addClass('active');
+      } else if (direction === 'previous') {
+        let active = $('section.active ul li.active');
+        let prev = active.prev();
+        if (prev.length === 0) {
+          prev = $('section.active ul li:last');
+        }
+        active.removeClass('active');
+        prev.addClass('active');
       }
-      active.removeClass('active');
-      prev.addClass('active');
-      prev.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
     }
   };
 

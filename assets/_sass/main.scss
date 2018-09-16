@@ -56,6 +56,11 @@ body {
 			display: block;
 			height: 100vh;
 			width: 100%;
+			z-index: 0 !important;
+			overflow: hidden;
+			.description p {
+				opacity: 1;
+			}
 		}
 	}
 }
@@ -100,23 +105,47 @@ section {
 		li {
 			position: absolute;
 			display: flex;
-			opacity: 0;
+			transition: 0.5s ease-in-out;
+			&.dark {
+				.left {
+					cursor: url('../images/arrow-l-b.png'), pointer;
+				}
+				.right {
+					cursor: url('../images/arrow-r-b.png'), pointer;
+				}
+			}
+			&:first-of-type {
+				.left {
+					cursor: auto;
+				}
+			}
+			&:last-of-type {
+				.right {
+					cursor: auto;
+				}
+			}
 			&.active {
-				opacity: 1;
+				transform: translateX(0) !important;
+			}
+			&.slide-left {
+				transform: translateX(100vw) !important;
+			}
+			&.slide-right {
+				transform: translateX(-100vw) !important;
 			}
 			@for $i from 0 to $elements {
 				&:nth-of-type(#{$i + 1}) {
-					z-index: #{0 - $i};
+					transform: translateX(100vw);
 				}
 			}
 		}
 	}
 	.more {
 		position: absolute;
-		width: 60vw;
-		left: 20vw;
+		width: 50vw;
+		left: 25vw;
 		height: 100%;
-		cursor: pointer;
+		cursor: inherit;
 		z-index: 12;
 	}
 	.left, .right {
@@ -124,24 +153,19 @@ section {
 		transition: 1s cubic-bezier(0.420, 0.000, 0.600, 0.985);
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: left;
 	}
 	.left {
 		cursor: url('../images/arrow-l-w.png'), pointer;
+		background-position: right;
 		&.leave {
 			transform: translateY(100%);
-		}
-		&.black {
-			cursor: url('../images/arrow-l-b.png'), pointer;
 		}
 	}
 	.right {
 		cursor: url('../images/arrow-r-w.png'), pointer;
+		background-position: left;
 		&.leave {
 			transform: translateY(-100%);
-		}
-		&.black {
-			cursor: url('../images/arrow-r-b.png'), pointer;
 		}
 	}
 	.description {
