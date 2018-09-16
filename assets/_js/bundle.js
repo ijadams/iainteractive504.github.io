@@ -9,9 +9,10 @@ $(document).ready(function () {
     $('#overlay').toggleClass('open');
   });
 
-  $(document).keyup(function(e) {
+  $(document).keyup(function() {
     if ($('#overlay').hasClass('open')) {
       $('button_container').toggleClass('active');
+      $('#toggle').toggleClass('active');
       $('#overlay').toggleClass('open');
     }
   });
@@ -22,6 +23,14 @@ $(document).ready(function () {
   let activeIndex = 0;
   let animating = false;
   let sectionLength = $('section').length;
+
+  // LOAD NEXT SLIDE AS PER MAU REQUEST
+  setTimeout(() => {
+    if (!animating && activeIndex === 0 && isDesktop()) {
+      console.log('here');
+      navigate('next');
+    }
+  }, 4000);
 
   // LEFT PREV CLICK
   $('.left').click(() => {
@@ -37,7 +46,7 @@ $(document).ready(function () {
     }
   });
 
-  // scroll animation logic
+  // SCROLL ANIMATION LOGIC
   $(window).on('scroll', (e) => {
     if (isDesktop()) {
       e.preventDefault();
@@ -124,9 +133,9 @@ $(document).ready(function () {
     return width > 768;
   };
 
-  // Center Click
+  // CENTER CLICK
   $('.more').click(() => {
-    console.log('more');
+    // center action goes here
   });
 
   // PAGINATION LOGIC
