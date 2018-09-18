@@ -20,6 +20,8 @@ fields:
   name: sort_order
   label: Sort Order
   description: The order of which projects appear (i.e. 1 is first 5 is last)
+  config:
+    required: true
 - type: image_gallery
   name: slide_1
   label: slide 1
