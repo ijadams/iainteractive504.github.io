@@ -154,6 +154,7 @@ section {
 		height: 100%;
 		cursor: inherit;
 		z-index: 12;
+		cursor: url('../images/arrow-down.png'), pointer;
 		@media screen and (max-width: 768px) {
 			display: none;
 		}
