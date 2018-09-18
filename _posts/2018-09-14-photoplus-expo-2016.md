@@ -6,12 +6,12 @@ description: Our proposal for Moogfest’s 2018 Visual Identity. The theme revol
 date: 2018-09-14 15:14:30 +0000
 sort_order: 3
 slide_1:
-- "/uploads/section-four_01.jpg"
-- "/uploads/section-four_02.jpg"
+- "/uploads/section-5_01.jpg"
+- "/uploads/section-5_02.jpg"
 slide_1_dark_toggle: true
 slide_2:
-- "/uploads/section-four_02_02.jpg"
-- "/uploads/section-four_02_01.jpg"
+- "/uploads/section-five_02_01.jpg"
+- "/uploads/section-five_02_02.jpg"
 slide_2_dark_toggle: true
 slide_3: []
 slide_3_dark_toggle: false
