@@ -133,8 +133,21 @@ $(document).ready(function () {
   };
 
   // CENTER CLICK
-  $('.more').click(() => {
-    // center action goes here
+  $('.project--slide').click((e) => {
+    let $tgt = $(e.target);
+    console.log('$tgt', $tgt);
+    if (!isDesktop()) {
+      let active = $($tgt).closest('li.active');
+      let next = active.next();
+      console.log('active', active);
+      if (next.length < 1) {
+        // next = $($tgt).parent().first();
+        next = $($tgt).parent().parent().find('li:first-of-type');
+      }
+      active.removeClass('active');
+      next.addClass('active');
+      next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
+    }
   });
 
 
@@ -164,24 +177,6 @@ $(document).ready(function () {
         prev.addClass('active');
         prev.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
         setTimeout(() => active.removeClass('active'), 300);
-      }
-    } else {
-      if (direction === 'next') {
-        let active = $('section.active ul li.active');
-        let next = active.next();
-        if (next.length === 0) {
-          next = $('section.active ul li:first');
-        }
-        active.removeClass('active');
-        next.addClass('active');
-      } else if (direction === 'previous') {
-        let active = $('section.active ul li.active');
-        let prev = active.prev();
-        if (prev.length === 0) {
-          prev = $('section.active ul li:last');
-        }
-        active.removeClass('active');
-        prev.addClass('active');
       }
     }
   };
