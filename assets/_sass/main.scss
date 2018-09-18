@@ -44,6 +44,9 @@ body {
 		.description p {
 			color: black !important;
 		}
+		.more {
+			cursor: url('../images/arrow-down.png'), pointer;
+		}
 	}
 	@media screen and (max-width: 768px) {
 		overflow-y: scroll;
@@ -121,16 +124,6 @@ section {
 					cursor: url('../images/arrow-r-b.png'), pointer;
 				}
 			}
-			&:first-of-type {
-				.left {
-					cursor: auto;
-				}
-			}
-			&:last-of-type {
-				.right {
-					cursor: auto;
-				}
-			}
 			&.active {
 				transform: translateX(0) !important;
 			}
@@ -152,9 +145,8 @@ section {
 		width: 50vw;
 		left: 25vw;
 		height: 100%;
-		cursor: inherit;
 		z-index: 12;
-		cursor: url('../images/arrow-down.png'), pointer;
+		cursor: url('../images/arrow-down-w.png'), pointer;
 		@media screen and (max-width: 768px) {
 			display: none;
 		}
