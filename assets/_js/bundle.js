@@ -135,11 +135,9 @@ $(document).ready(function () {
   // CENTER CLICK
   $('.project--slide').click((e) => {
     let $tgt = $(e.target);
-    console.log('$tgt', $tgt);
     if (!isDesktop()) {
       let active = $($tgt).closest('li.active');
       let next = active.next();
-      console.log('active', active);
       if (next.length < 1) {
         // next = $($tgt).parent().first();
         next = $($tgt).parent().parent().find('li:first-of-type');
