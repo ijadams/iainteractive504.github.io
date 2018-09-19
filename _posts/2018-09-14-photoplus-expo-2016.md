@@ -20,7 +20,7 @@ slide_3_dark_toggle: true
 slide_4:
 - "/uploads/PhotoplusExpo2016_01_01.jpg"
 - "/uploads/PhotoplusExpo2016_01_02.jpg"
-slide_4_dark_toggle: false
+slide_4_dark_toggle: true
 slide_5: []
 slide_5_dark_toggle: false
 
