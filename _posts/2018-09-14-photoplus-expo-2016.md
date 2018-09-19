@@ -10,8 +10,8 @@ slide_1:
 - "/uploads/PhotoplusExpo2016_Cover_02.jpg"
 slide_1_dark_toggle: true
 slide_2:
-- "/uploads/section-five_02_01.jpg"
-- "/uploads/section-five_02_02.jpg"
+- "/uploads/PhotoplusExpo2016_01_01.jpg"
+- "/uploads/PhotoplusExpo2016_01_02.jpg"
 slide_2_dark_toggle: true
 slide_3: []
 slide_3_dark_toggle: false
