@@ -13,7 +13,9 @@ slide_2:
 - "/uploads/PhotoplusExpo2016_01_01.jpg"
 - "/uploads/PhotoplusExpo2016_01_02.jpg"
 slide_2_dark_toggle: true
-slide_3: []
+slide_3:
+- "/uploads/PhotoplusExpo2016_02_01.jpg"
+- "/uploads/PhotoplusExpo2016_02_02.jpg"
 slide_3_dark_toggle: false
 slide_4: []
 slide_4_dark_toggle: false
