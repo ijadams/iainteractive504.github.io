@@ -17,8 +17,8 @@ slide_3:
 - "/uploads/BLAAAH_Slide1_04-1.jpg"
 slide_3_dark_toggle: true
 slide_4:
-- "/uploads/BLAAAH_Slide1_06-1.jpg"
 - "/uploads/BLAAAH_Slide1_05-1.jpg"
+- "/uploads/BLAAAH_Slide1_06-1.jpg"
 slide_4_dark_toggle: true
 slide_5: []
 slide_5_dark_toggle: false
