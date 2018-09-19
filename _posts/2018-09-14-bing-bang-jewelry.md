@@ -12,7 +12,9 @@ slide_2:
 - "/uploads/section-two_02_01.jpg"
 - "/uploads/section-two_02_02.jpg"
 slide_2_dark_toggle: false
-slide_3: []
+slide_3:
+- "/uploads/BingBang_03_01.jpg"
+- "/uploads/BingBang_03_02.jpg"
 slide_3_dark_toggle: false
 slide_4: []
 slide_4_dark_toggle: false
