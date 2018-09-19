@@ -9,17 +9,17 @@ slide_1:
 - "/uploads/section-one_02.jpg"
 slide_1_dark_toggle: false
 slide_2:
-- "/uploads/BLAAAH_Slide1_01.jpg"
-- "/uploads/BLAAAH_Slide1_02.jpg"
+- "/uploads/BLAAAH_Slide1_01-1.jpg"
+- "/uploads/BLAAAH_Slide1_02-1.jpg"
 slide_2_dark_toggle: true
 slide_3:
-- "/uploads/BLAAAH_Slide1_03.jpg"
-- "/uploads/BLAAAH_Slide1_04.jpg"
-slide_3_dark_toggle: false
+- "/uploads/BLAAAH_Slide1_03-1.jpg"
+- "/uploads/BLAAAH_Slide1_04-1.jpg"
+slide_3_dark_toggle: true
 slide_4:
-- "/uploads/BLAAAH_Slide1_05.jpg"
-- "/uploads/BLAAAH_Slide1_06.jpg"
-slide_4_dark_toggle: false
+- "/uploads/BLAAAH_Slide1_06-1.jpg"
+- "/uploads/BLAAAH_Slide1_05-1.jpg"
+slide_4_dark_toggle: true
 slide_5: []
 slide_5_dark_toggle: false
 sort_order: 0
