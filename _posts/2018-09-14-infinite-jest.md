@@ -8,7 +8,7 @@ sort_order: 4
 slide_1:
 - "/uploads/section-five_01.jpg"
 - "/uploads/section-five_02.jpg"
-slide_1_dark_toggle: false
+slide_1_dark_toggle: true
 slide_2: []
 slide_2_dark_toggle: false
 slide_3: []
