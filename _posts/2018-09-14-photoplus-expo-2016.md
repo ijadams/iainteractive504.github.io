@@ -10,14 +10,16 @@ slide_1:
 - "/uploads/PhotoplusExpo2016_Cover_02.jpg"
 slide_1_dark_toggle: true
 slide_2:
-- "/uploads/PhotoplusExpo2016_01_01.jpg"
-- "/uploads/PhotoplusExpo2016_01_02.jpg"
+- "/uploads/PhotoplusExpo2016_03_01.jpg"
+- "/uploads/PhotoplusExpo2016_03_02.jpg"
 slide_2_dark_toggle: true
 slide_3:
 - "/uploads/PhotoplusExpo2016_02_01.jpg"
 - "/uploads/PhotoplusExpo2016_02_02.jpg"
 slide_3_dark_toggle: true
-slide_4: []
+slide_4:
+- "/uploads/PhotoplusExpo2016_01_01.jpg"
+- "/uploads/PhotoplusExpo2016_01_02.jpg"
 slide_4_dark_toggle: false
 slide_5: []
 slide_5_dark_toggle: false
