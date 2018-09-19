@@ -20,8 +20,10 @@ slide_4:
 - "/uploads/BLAAAH_Slide1_05-1.jpg"
 - "/uploads/BLAAAH_Slide1_06-1.jpg"
 slide_4_dark_toggle: true
-slide_5: []
-slide_5_dark_toggle: false
+slide_5:
+- "/uploads/BLAAAH_Slide2_01.jpg"
+- "/uploads/BLAAAH_Slide2_02.jpg"
+slide_5_dark_toggle: true
 sort_order: 1
 
 ---
