@@ -13,8 +13,8 @@ slide_2:
 - "/uploads/BingBang_Spreads_02_02-1.jpg"
 slide_2_dark_toggle: true
 slide_3:
-- "/uploads/BingBang_Spreads_04_01.jpg"
-- "/uploads/BingBang_Spreads_04_02.jpg"
+- "/uploads/BingBang_Spreads_04_01-1.jpg"
+- "/uploads/BingBang_Spreads_04_02-1.jpg"
 slide_3_dark_toggle: false
 slide_4:
 - "/uploads/BingBang_Spreads_03_01.jpg"
