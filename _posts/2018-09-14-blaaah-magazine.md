@@ -6,8 +6,8 @@ description: Creative direction and editing of BLAAAH magazine issue 03. This is
   society.
 date: 2018-09-14 14:25:24 +0000
 slide_1:
-- "/uploads/section-one_01.jpg"
-- "/uploads/section-one_02.jpg"
+- "/uploads/BLAAAHMag_Cover_01.jpg"
+- "/uploads/BLAAAHMag_Cover_02.jpg"
 slide_1_dark_toggle: false
 slide_2:
 - "/uploads/BLAAAH_Slide1_01-1.jpg"
