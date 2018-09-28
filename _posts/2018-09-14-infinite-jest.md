@@ -3,7 +3,7 @@ title: Infinite Jest
 project_title: Book Covers
 description: Some book cover redesigns made for some of our favorite literature.
 date: 2018-09-14 15:16:46 +0000
-sort_order: 5
+sort_order: 6
 slide_1:
 - "/uploads/section-five_01.jpg"
 - "/uploads/section-five_02.jpg"
