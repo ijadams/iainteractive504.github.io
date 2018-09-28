@@ -4,7 +4,7 @@ project_title: Charlie Rubin 'Outsiders'
 description: Design and publishing of a book for Charlie Rubin latest series titled
   'Outsiders.'
 date: 2018-09-14 15:18:38 +0000
-sort_order: 4
+sort_order: 5
 slide_1:
 - "/uploads/section-six_01-1.jpg"
 - "/uploads/section-six_02-1.jpg"
