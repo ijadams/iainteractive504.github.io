@@ -9,14 +9,16 @@ slide_1:
 - "/uploads/section-two_02.jpg"
 slide_1_dark_toggle: false
 slide_2:
-- "/uploads/section-two_02_01.jpg"
-- "/uploads/section-two_02_02.jpg"
-slide_2_dark_toggle: false
+- "/uploads/BingBang_Spreads_02_01-1.jpg"
+- "/uploads/BingBang_Spreads_02_02-1.jpg"
+slide_2_dark_toggle: true
 slide_3:
-- "/uploads/BingBang_03_01.jpg"
-- "/uploads/BingBang_03_02.jpg"
+- "/uploads/BingBang_Spreads_04_01.jpg"
+- "/uploads/BingBang_Spreads_04_02.jpg"
 slide_3_dark_toggle: false
-slide_4: []
+slide_4:
+- "/uploads/BingBang_Spreads_03_01.jpg"
+- "/uploads/BingBang_Spreads_03_02.jpg"
 slide_4_dark_toggle: false
 slide_5: []
 slide_5_dark_toggle: false
