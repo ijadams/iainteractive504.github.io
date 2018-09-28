@@ -19,7 +19,7 @@ slide_3_dark_toggle: false
 slide_4:
 - "/uploads/BingBang_Spreads_03_01.jpg"
 - "/uploads/BingBang_Spreads_03_02.jpg"
-slide_4_dark_toggle: false
+slide_4_dark_toggle: true
 slide_5: []
 slide_5_dark_toggle: false
 sort_order: 1
