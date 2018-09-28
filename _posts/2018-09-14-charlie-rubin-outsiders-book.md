@@ -1,8 +1,8 @@
 ---
 title: Charlie Rubin 'Outsiders' Book
 project_title: Charlie Rubin 'Outsiders'
-description: Layout and design of a book for Charlie Rubin latest series of mix media
-  photography portraits.
+description: Design and publishing of a book for Charlie Rubin latest series titled
+  'Outsiders.'
 date: 2018-09-14 15:18:38 +0000
 sort_order: 4
 slide_1:
