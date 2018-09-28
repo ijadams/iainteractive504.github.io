@@ -1,8 +1,9 @@
 ---
 title: BLAAAH Magazine
 project_title: BLAAAH Magazine Issue 03
-description: Art Direction and photography for an online editorial. The series highlights
-  a collection of gold jewelry perfect for summer.
+description: Creative direction and editing of BLAAAH magazine issue 03. This issue
+  explores the definition of leisure and how it serves as a liminal constant in contemporary
+  society.
 date: 2018-09-14 14:25:24 +0000
 slide_1:
 - "/uploads/section-one_01.jpg"
