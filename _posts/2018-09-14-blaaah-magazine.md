@@ -25,6 +25,6 @@ slide_5:
 - "/uploads/BLAAAH_Slide2_05.jpg"
 - "/uploads/BLAAAH_Slide2_06.jpg"
 slide_5_dark_toggle: true
-sort_order: 2
+sort_order: 3
 
 ---
