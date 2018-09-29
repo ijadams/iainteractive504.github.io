@@ -6,3 +6,12 @@ fields:
 - type: file
   name: intro_image_left
   label: Intro Image Left
+- type: file
+  name: intro_image_right
+  label: intro image right
+- type: color
+  name: intro_background
+  config:
+    color_format: Hex
+  label: intro background
+  default: "#000000"
