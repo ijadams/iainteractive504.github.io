@@ -6,8 +6,8 @@ description: Visual identity for the new virtual reality production company base
 date: 2018-09-14 15:19:59 +0000
 sort_order: 2
 slide_1:
-- "/uploads/VRA_Logo_01.jpg"
-- "/uploads/VRA_Logo_02.jpg"
+- "/uploads/VRA_Logo_01-1.jpg"
+- "/uploads/VRA_Logo_02-1.jpg"
 slide_1_dark_toggle: false
 slide_2:
 - "/uploads/VRA_Wordmark_01.jpg"
