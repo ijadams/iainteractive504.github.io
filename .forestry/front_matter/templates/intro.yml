@@ -2,4 +2,7 @@
 label: intro
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: file
+  name: intro_image_left
+  label: Intro Image Left
