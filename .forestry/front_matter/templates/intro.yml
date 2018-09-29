@@ -15,3 +15,5 @@ fields:
     color_format: Hex
   label: intro background
   default: "#000000"
+pages:
+- intro-slide.md
