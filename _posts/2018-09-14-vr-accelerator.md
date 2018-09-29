@@ -16,11 +16,11 @@ slide_2_dark_toggle: false
 slide_3:
 - "/uploads/VRA_Instagram_01.jpg"
 - "/uploads/VRA_Instagram_02.jpg"
-slide_3_dark_toggle: false
+slide_3_dark_toggle: true
 slide_4:
 - "/uploads/VRA_Website_01.jpg"
 - "/uploads/VRA_Website_02.jpg"
-slide_4_dark_toggle: false
+slide_4_dark_toggle: true
 slide_5: []
 slide_5_dark_toggle: false
 
