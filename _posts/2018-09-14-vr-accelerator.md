@@ -18,10 +18,12 @@ slide_3:
 - "/uploads/VRA_Instagram_02.jpg"
 slide_3_dark_toggle: true
 slide_4:
+- "/uploads/VRA_Typography_01.jpg"
+- "/uploads/VRA_Typography_02.jpg"
+slide_4_dark_toggle: true
+slide_5:
 - "/uploads/VRA_Website_01-1.jpg"
 - "/uploads/VRA_Website_02-1.jpg"
-slide_4_dark_toggle: true
-slide_5: []
 slide_5_dark_toggle: false
 
 ---
