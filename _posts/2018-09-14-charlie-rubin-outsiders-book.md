@@ -14,16 +14,16 @@ slide_2:
 - "/uploads/CharlieRubin_Spreads_01_02.jpg"
 slide_2_dark_toggle: true
 slide_3:
-- "/uploads/CharlieRubin_Spreads_01_03.jpg"
-- "/uploads/CharlieRubin_Spreads_01_04.jpg"
+- "/uploads/CharlieRubin_Spreads_02_03-2.jpg"
+- "/uploads/CharlieRubin_Spreads_02_04-2.jpg"
 slide_3_dark_toggle: true
 slide_4:
 - "/uploads/CharlieRubin_Spreads_01_05.jpg"
 - "/uploads/CharlieRubin_Spreads_01_06.jpg"
 slide_4_dark_toggle: true
 slide_5:
-- "/uploads/CharlieRubin_Spreads_02_03.jpg"
-- "/uploads/CharlieRubin_Spreads_02_04.jpg"
+- "/uploads/CharlieRubin_Spreads_02_03-1.jpg"
+- "/uploads/CharlieRubin_Spreads_02_04-1.jpg"
 slide_5_dark_toggle: true
 
 ---
