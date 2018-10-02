@@ -22,8 +22,8 @@ slide_4:
 - "/uploads/VRA_Typography_02.jpg"
 slide_4_dark_toggle: true
 slide_5:
-- "/uploads/VRA_Website_01-1.jpg"
-- "/uploads/VRA_Website_02-1.jpg"
+- "/uploads/VRA_Website_01-2.jpg"
+- "/uploads/VRA_Website_02-2.jpg"
 slide_5_dark_toggle: true
 
 ---
