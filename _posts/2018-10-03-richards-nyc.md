@@ -1,8 +1,8 @@
 ---
 title: RICHARDS NYC
 project_title: RICHARDS NYC
-description: Design and development of Richards NYC's 2015 digital lookbook. <a href="http://krill.nyc/spring-summer-2015.html">View
-  Website</a>
+description: Design and development of a digital lookbook for RICHARDS NYC's 2015
+  collection. <a href="http://krill.nyc/spring-summer-2015.html">View Website</a>
 date: 2018-10-03 05:11:05 +0000
 sort_order: 7
 slide_1:
