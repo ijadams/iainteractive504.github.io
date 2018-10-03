@@ -1,9 +1,8 @@
 ---
 title: BLAAAH Magazine
 project_title: 'BLAAAH Magazine: Issue 03'
-description: Creative direction and editing of BLAAAH magazine issue 03. This issue
-  explores the definition of leisure and how it serves as a liminal constant in contemporary
-  society.
+description: 'Creative direction and design of BLAAAH magazine Issue 03 titled ''Discovery
+  Zones''. '
 date: 2018-09-14 14:25:24 +0000
 slide_1:
 - "/uploads/BLAAAHMag_Cover_01.jpg"
