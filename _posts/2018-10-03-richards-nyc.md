@@ -4,7 +4,7 @@ project_title: RICHARDS NYC
 description: 'Design and development of a digital lookbook for RICHARDS NYC''s 2015
   collection. '
 date: 2018-10-03 05:11:05 +0000
-sort_order: 7
+sort_order: 3
 slide_1:
 - "/uploads/RichardsNYC_Website_01.jpg"
 - "/uploads/RichardsNYC_Website_02.jpg"
