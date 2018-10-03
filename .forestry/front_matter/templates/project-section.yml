@@ -79,6 +79,7 @@ fields:
   label: slide 5 color
   name: slide_5_color
 pages:
+- _posts/richards-nyc.md
 - _posts/2018-09-14-vr-accelerator.md
 - _posts/2018-09-14-charlie-rubin-outsiders-book.md
 - _posts/2018-09-14-blaaah-magazine.md
