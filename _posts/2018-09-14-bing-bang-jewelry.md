@@ -23,5 +23,10 @@ slide_4_dark_toggle: true
 slide_5: []
 slide_5_dark_toggle: false
 sort_order: 1
+slide_1_color: ''
+slide_2_color: "#FFE2DD"
+slide_3_color: ''
+slide_4_color: "#FFE2DD"
+slide_5_color: ''
 
 ---
