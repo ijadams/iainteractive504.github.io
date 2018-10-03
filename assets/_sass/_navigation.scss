@@ -155,7 +155,7 @@ body.dark {
 			font-family: 'favorit', sans-serif;
 			font-weight: 400;
 			text-decoration: none;
-			color: #7f8c8d;
+			color:black;
 			transition: 0.1s ease-in;
 			font-weight: bold;
 			&:hover {
@@ -165,7 +165,7 @@ body.dark {
 	}
 
 	&.open {
-		opacity: .9;
+		opacity: 1;
 		visibility: visible;
 		height: 100%;
 

@@ -54,7 +54,7 @@ $(document).ready(function () {
 
   let scroll = {
     isThrottled: false,
-    throttleDuration: 1100,
+    throttleDuration: 1650,
   };
 
   $(window).on('mousewheel', (e) => {
@@ -113,6 +113,9 @@ $(document).ready(function () {
   };
 
   const removeActiveClass = () => {
+    console.log($('section.active ul li.active'));
+    $('section.active ul li.active').removeClass('active');
+    $('section.active ul li').first().addClass('active');
     $('section.active').removeClass('active');
     $('section').eq(activeIndex).addClass('active');
     colorize();
