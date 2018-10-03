@@ -28,30 +28,56 @@ fields:
 - type: boolean
   name: slide_1_dark_toggle
   label: Slide 1 Dark Toggle
+- type: color
+  config:
+    color_format: Hex
+  label: slide 1 color
+  name: slide_1_color
+  description: Color of text
 - type: image_gallery
   label: slide 2
   name: slide_2
 - type: boolean
   name: slide_2_dark_toggle
   label: Slide 2 Dark Toggle
+- type: color
+  config:
+    color_format: Hex
+  name: slide_2_color
+  label: slide 2 color
 - type: image_gallery
   name: slide_3
   label: slide 3
 - type: boolean
   name: slide_3_dark_toggle
   label: Slide 3 Dark Toggle
+- type: color
+  config:
+    color_format: Hex
+  label: slide 3 color
+  name: slide_3_color
 - type: image_gallery
   name: slide_4
   label: slide 4
 - type: boolean
   name: slide_4_dark_toggle
   label: Slide 4 Dark Toggle
+- type: color
+  config:
+    color_format: Hex
+  label: slide 4 color
+  name: slide_4_color
 - type: image_gallery
   name: slide_5
   label: slide 5
 - type: boolean
   name: slide_5_dark_toggle
   label: Slide 5 Dark Toggle
+- type: color
+  config:
+    color_format: Hex
+  label: slide 5 color
+  name: slide_5_color
 pages:
 - _posts/2018-09-14-vr-accelerator.md
 - _posts/2018-09-14-charlie-rubin-outsiders-book.md
