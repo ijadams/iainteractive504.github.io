@@ -1,8 +1,8 @@
 ---
 title: Project Zero / Bill Gates Foundation
-project_title: Project Zero / Bill Gates Founda
-description: Art Direction and photography for an online editorial. The series highlights
-  a collection of gold jewelry perfect for summer.
+project_title: Project Zero / Bill Gates Foundation
+description: Mini site designed to house three 360 films to raise awareness and donations
+  for neglected tropical diseases.
 date: 2018-10-03 17:23:55 +0000
 sort_order: 5
 slide_1:
@@ -23,5 +23,10 @@ slide_4:
 slide_4_dark_toggle: false
 slide_5: []
 slide_5_dark_toggle: false
+slide_1_color: ''
+slide_2_color: ''
+slide_3_color: ''
+slide_4_color: ''
+slide_5_color: ''
 
 ---
