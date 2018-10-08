@@ -142,7 +142,6 @@ $(document).ready(function () {
       let active = $($tgt).closest('li.active');
       let next = active.next();
       if (next.length < 1) {
-        // next = $($tgt).parent().first();
         next = $($tgt).parent().parent().find('li:first-of-type');
       }
       active.removeClass('active');
