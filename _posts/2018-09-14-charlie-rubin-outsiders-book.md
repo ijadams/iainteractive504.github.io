@@ -3,7 +3,7 @@ title: Charlie Rubin 'Outsiders' Book
 project_title: Charlie Rubin 'Outsiders'
 description: Book design for Charlie Rubin's latest series of works titled 'Outsiders.'
 date: 2018-09-14 15:18:38 +0000
-sort_order: 7
+sort_order: 8
 slide_1:
 - "/uploads/section-six_01-1.jpg"
 - "/uploads/section-six_02-1.jpg"
@@ -24,5 +24,10 @@ slide_5:
 - "/uploads/CharlieRubin_Spreads_02_03-1.jpg"
 - "/uploads/CharlieRubin_Spreads_02_04-1.jpg"
 slide_5_dark_toggle: true
+slide_1_color: ''
+slide_2_color: ''
+slide_3_color: ''
+slide_4_color: ''
+slide_5_color: ''
 
 ---
