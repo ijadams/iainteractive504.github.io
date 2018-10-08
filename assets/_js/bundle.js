@@ -4,12 +4,12 @@ $(document).ready(function () {
   $('body').removeClass('fade-out');
 
   // NAV BAR
-  $('#toggle').click(function() {
+  $('#toggle').click(function () {
     $(this).toggleClass('active');
     $('#overlay').toggleClass('open');
   });
 
-  $(document).keyup(function() {
+  $(document).keyup(function () {
     if ($('#overlay').hasClass('open')) {
       $('button_container').toggleClass('active');
       $('#toggle').toggleClass('active');
@@ -24,7 +24,10 @@ $(document).ready(function () {
   let animating = false;
   let sectionLength = $('section').length;
 
-  // LOAD NEXT SLIDE AS PER MAU REQUEST
+  // SLICK CAROUSEL
+  $('.project--slide ul').slick();
+
+  // LOAD NEXT SLIDE
   setTimeout(() => {
     if (!animating && activeIndex === 0 && isDesktop()) {
       navigate('next');
@@ -148,33 +151,19 @@ $(document).ready(function () {
     }
   });
 
-
   // PAGINATION LOGIC
   const toggleSlide = (direction) => {
     if (isDesktop()) {
       if (direction === 'next') {
         let active = $('section.active ul li.active');
         let next = active.next();
-        if (next.length === 0) {
-          return;
-        }
-        active.addClass('slide-right');
-        next.addClass('active');
-        next.removeClass('slide-left');
         next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
-        setTimeout(() => active.removeClass('active'), 300);
+        $('.project--slide.active ul').slickNext();
       } else if (direction === 'previous') {
         let active = $('section.active ul li.active');
         let prev = active.prev();
-        if (prev.length === 0) {
-          return;
-        }
-        active.addClass('slide-left');
-        prev.addClass('active');
-        prev.removeClass('slide-right');
-        prev.addClass('active');
         prev.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
-        setTimeout(() => active.removeClass('active'), 300);
+        $('.project--slide.active ul').slickPrev();
       }
     }
   };
