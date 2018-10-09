@@ -29,6 +29,6 @@ slide_1_color: "#F518FF"
 slide_2_color: "#FFE2DD"
 slide_3_color: ''
 slide_4_color: "#FFE2DD"
-slide_5_color: ''
+slide_5_color: "#FFFFFF"
 
 ---
