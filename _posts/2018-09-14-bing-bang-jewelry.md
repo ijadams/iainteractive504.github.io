@@ -22,7 +22,7 @@ slide_4:
 slide_4_dark_toggle: true
 slide_5:
 - "/uploads/BingBang_03_01-1.jpg"
-- "/uploads/BingBang_03_02-1.jpg"
+- "/uploads/BingBang_03_02-2.jpg"
 slide_5_dark_toggle: false
 sort_order: 1
 slide_1_color: "#FFFFFF"
