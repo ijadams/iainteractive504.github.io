@@ -1,8 +1,8 @@
 ---
 title: Verizon 'New Perspective' Logo
 project_title: Verizon 'New Perspective' Logo
-description: Logo and animation design for a series of 360 video created by Verizon
-  in partnership with RYOT studios
+description: Logo and animation design for a series of 360 videos created by Verizon
+  and RYOT studios
 date: 2018-10-09 06:14:12 +0000
 sort_order: 10
 slide_1:
