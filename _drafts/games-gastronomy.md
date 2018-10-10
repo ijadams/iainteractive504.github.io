@@ -1,8 +1,24 @@
 ---
 title: Games & Gastronomy
-project_title: BLAAAH Magazine.
-description: Art Direction and photography for an online editorial. The series highlights
-  a collection of gold jewelry perfect for summer.
+project_title: Games & Gastronomy
+description: An editorial shoot for BLAAAH magazine that explains Roger Caillois'
+  categorization of games with the help of some playful dish
 date: 2018-10-10 17:53:38 +0000
+sort_order: 3
+slide_1: []
+slide_1_dark_toggle: false
+slide_1_color: ''
+slide_2: []
+slide_2_dark_toggle: false
+slide_2_color: ''
+slide_3: []
+slide_3_dark_toggle: false
+slide_3_color: ''
+slide_4: []
+slide_4_dark_toggle: false
+slide_4_color: ''
+slide_5: []
+slide_5_dark_toggle: false
+slide_5_color: ''
 
 ---
