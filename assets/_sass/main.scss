@@ -156,6 +156,7 @@ section {
 		transition: 1s cubic-bezier(0.420, 0.000, 0.600, 0.985);
 		background-repeat: no-repeat;
 		background-size: cover;
+		will-change: transform;
 	}
 	.left {
 		cursor: url('../images/arrow-l-w.png'), pointer;
