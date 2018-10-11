@@ -8,7 +8,7 @@ sort_order: 10
 slide_1:
 - "/uploads/VerizonVR_Logo_Animation_01.gif"
 - "/uploads/VerizonVR_Logo_Animation_02.gif"
-slide_1_dark_toggle: true
+slide_1_dark_toggle: false
 slide_1_color: ''
 slide_2: []
 slide_2_dark_toggle: false
