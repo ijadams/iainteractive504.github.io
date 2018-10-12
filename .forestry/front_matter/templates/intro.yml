@@ -16,4 +16,5 @@ fields:
   label: intro background
   default: "#000000"
 pages:
+- _posts/intro-do-not-delete.md
 - intro-slide.md
