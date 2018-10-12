@@ -15,5 +15,9 @@ fields:
     color_format: Hex
   label: intro background
   default: "#000000"
+- type: number
+  name: sort_order
+  label: sort order
 pages:
+- _posts/2018-10-12-intro-do-not-delete.md
 - intro-slide.md
