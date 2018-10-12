@@ -6,8 +6,8 @@ description: An editorial shoot for BLAAAH magazine that explains Roger Caillois
 date: 2018-10-10 17:53:38 +0000
 sort_order: 3
 slide_1:
-- "/uploads/GastronomyGames_Cover_01.jpg"
-- "/uploads/GastronomyGames_Cover_02.jpg"
+- "/uploads/GastronomyGames_Cover_01-1.jpg"
+- "/uploads/GastronomyGames_Cover_02-1.jpg"
 slide_1_dark_toggle: false
 slide_1_color: ''
 slide_2:
