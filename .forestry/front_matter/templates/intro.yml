@@ -19,5 +19,5 @@ fields:
   name: sort_order
   label: sort order
 pages:
-- _posts/intro-do-not-delete.md
+- _posts/2018-10-12-intro-do-not-delete.md
 - intro-slide.md
