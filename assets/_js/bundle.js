@@ -9,6 +9,13 @@ $(document).ready(function () {
     $('#overlay').toggleClass('open');
   });
 
+  $('#overlay').click(() => {
+    if (isDesktop()) {
+      $('#toggle').toggleClass('active');
+      $('#overlay').toggleClass('open');
+    }
+  });
+
   $(document).keyup(function () {
     if ($('#overlay').hasClass('open')) {
       $('button_container').toggleClass('active');

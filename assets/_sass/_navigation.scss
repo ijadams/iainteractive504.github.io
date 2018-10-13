@@ -168,6 +168,11 @@ body.dark {
 		opacity: 1;
 		visibility: visible;
 		height: 100%;
+		cursor: url('../images/x.png'), pointer;
+
+		@media screen and (max-width: 768px) {
+			cursor: pointer;
+		}
 
 		li {
 			animation: fadeInRight .5s ease forwards;
@@ -237,6 +242,13 @@ body.dark {
 				}
 			}
 		}
+	}
+}
+
+.button_container.active {
+	display: none;
+	@media screen and (max-width: 768px) {
+		display: block;
 	}
 }
 
