@@ -25,7 +25,23 @@ $(document).ready(function () {
   let sectionLength = $('section').length;
 
   // SLICK CAROUSEL
-  $('.project--slide ul').slick();
+  $('.project--slide ul').slick(
+    {
+      arrows: false,
+      infinite: true,
+    }
+  );
+
+  $('.project--slide ul').on('beforeChange', (event, slick, currentSlide, nextSlide) => {
+    let next;
+    if (isDesktop()) {
+      next = $('section.active ul li').eq(nextSlide + 1);
+    } else {
+      let project = slick.$slider[0];
+      next = $(project).find('li').eq(nextSlide + 1);
+    }
+    next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
+  });
 
   // LOAD NEXT SLIDE
   setTimeout(() => {
@@ -116,6 +132,7 @@ $(document).ready(function () {
   };
 
   const removeActiveClass = () => {
+    $('section.active ul').slick('slickGoTo', 0);
     $('section.active').removeClass('active');
     $('section').eq(activeIndex).addClass('active');
     colorize();
@@ -139,14 +156,8 @@ $(document).ready(function () {
   $('.project--slide').click((e) => {
     let $tgt = $(e.target);
     if (!isDesktop()) {
-      let active = $($tgt).closest('li.active');
-      let next = active.next();
-      if (next.length < 1) {
-        next = $($tgt).parent().parent().find('li:first-of-type');
-      }
-      active.removeClass('active');
-      next.addClass('active');
-      next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
+      let active = $($tgt).closest('.project--slide ul');
+      active.slick('slickNext');
     }
   });
 
@@ -154,15 +165,9 @@ $(document).ready(function () {
   const toggleSlide = (direction) => {
     if (isDesktop()) {
       if (direction === 'next') {
-        let active = $('section.active ul li.active');
-        let next = active.next();
-        next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
-        $('.project--slide.active ul').slickNext();
+        $('.project--slide.active ul').slick('slickNext');
       } else if (direction === 'previous') {
-        let active = $('section.active ul li.active');
-        let prev = active.prev();
-        prev.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
-        $('.project--slide.active ul').slickPrev();
+        $('.project--slide.active ul').slick('slickPrev');
       }
     }
   };
