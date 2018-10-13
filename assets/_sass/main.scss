@@ -106,36 +106,14 @@ section {
 			margin: 0;
 		}
 		li {
-			position: absolute;
-			display: flex;
+			display: block;
 			transition: 0.5s ease-in-out;
-			@media screen and (max-width: 768px) {
-				transform: none !important;
-				z-index: -1;
-				&.active {
-					z-index: 0;
-				}
-			}
 			&.dark {
 				.left {
 					cursor: url('../images/arrow-l-b.png'), pointer;
 				}
 				.right {
 					cursor: url('../images/arrow-r-b.png'), pointer;
-				}
-			}
-			&.active {
-				transform: translateX(0) !important;
-			}
-			&.slide-left {
-				transform: translateX(100vw) !important;
-			}
-			&.slide-right {
-				transform: translateX(-100vw) !important;
-			}
-			@for $i from 0 to $elements {
-				&:nth-of-type(#{$i + 1}) {
-					transform: translateX(100vw);
 				}
 			}
 		}
@@ -152,13 +130,16 @@ section {
 		}
 	}
 	.left, .right {
-		flex: 1;
+		display: inline-block;
+		width: 50%;
+		height: 100%;
 		transition: 1s cubic-bezier(0.420, 0.000, 0.600, 0.985);
 		background-repeat: no-repeat;
 		background-size: cover;
 		will-change: transform;
 	}
 	.left {
+		float: left;
 		cursor: url('../images/arrow-l-w.png'), pointer;
 		background-position: right;
 		&.leave {
@@ -202,6 +183,14 @@ section {
 			}
 		}
 	}
+}
+
+.slick-slider .slick-list, .slick-slider .slick-track {
+	height: 100%;
+}
+
+.slick-slide > div {
+	height: 100%;
 }
 
 @import 'navigation';

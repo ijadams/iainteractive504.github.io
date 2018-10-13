@@ -4,12 +4,12 @@ $(document).ready(function () {
   $('body').removeClass('fade-out');
 
   // NAV BAR
-  $('#toggle').click(function() {
+  $('#toggle').click(function () {
     $(this).toggleClass('active');
     $('#overlay').toggleClass('open');
   });
 
-  $(document).keyup(function() {
+  $(document).keyup(function () {
     if ($('#overlay').hasClass('open')) {
       $('button_container').toggleClass('active');
       $('#toggle').toggleClass('active');
@@ -24,7 +24,26 @@ $(document).ready(function () {
   let animating = false;
   let sectionLength = $('section').length;
 
-  // LOAD NEXT SLIDE AS PER MAU REQUEST
+  // SLICK CAROUSEL
+  $('.project--slide ul').slick(
+    {
+      arrows: false,
+      infinite: true,
+    }
+  );
+
+  $('.project--slide ul').on('beforeChange', (event, slick, currentSlide, nextSlide) => {
+    let next;
+    if (isDesktop()) {
+      next = $('section.active ul li').eq(nextSlide + 1);
+    } else {
+      let project = slick.$slider[0];
+      next = $(project).find('li').eq(nextSlide + 1);
+    }
+    next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
+  });
+
+  // LOAD NEXT SLIDE
   setTimeout(() => {
     if (!animating && activeIndex === 0 && isDesktop()) {
       navigate('next');
@@ -113,6 +132,7 @@ $(document).ready(function () {
   };
 
   const removeActiveClass = () => {
+    $('section.active ul').slick('slickGoTo', 0);
     $('section.active').removeClass('active');
     $('section').eq(activeIndex).addClass('active');
     colorize();
@@ -136,45 +156,18 @@ $(document).ready(function () {
   $('.project--slide').click((e) => {
     let $tgt = $(e.target);
     if (!isDesktop()) {
-      let active = $($tgt).closest('li.active');
-      let next = active.next();
-      if (next.length < 1) {
-        // next = $($tgt).parent().first();
-        next = $($tgt).parent().parent().find('li:first-of-type');
-      }
-      active.removeClass('active');
-      next.addClass('active');
-      next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
+      let active = $($tgt).closest('.project--slide ul');
+      active.slick('slickNext');
     }
   });
-
 
   // PAGINATION LOGIC
   const toggleSlide = (direction) => {
     if (isDesktop()) {
       if (direction === 'next') {
-        let active = $('section.active ul li.active');
-        let next = active.next();
-        if (next.length === 0) {
-          return;
-        }
-        active.addClass('slide-right');
-        next.addClass('active');
-        next.removeClass('slide-left');
-        next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
-        setTimeout(() => active.removeClass('active'), 300);
+        $('.project--slide.active ul').slick('slickNext');
       } else if (direction === 'previous') {
-        let active = $('section.active ul li.active');
-        let prev = active.prev();
-        if (prev.length === 0) {
-          return;
-        }
-        active.addClass('slide-left');
-        prev.addClass('active');
-        prev.removeClass('slide-right');
-        prev.addClass('active');
-        prev.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
-        setTimeout(() => active.removeClass('active'), 300);
+        $('.project--slide.active ul').slick('slickPrev');
       }
     }
   };
