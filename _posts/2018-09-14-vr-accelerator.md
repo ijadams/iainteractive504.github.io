@@ -1,6 +1,6 @@
 ---
 title: VR ACCELERATOR
-project_title: VR ACCELERATOR
+project_title: VRACCELERATOR
 description: Visual identity and style guide for VRAccelerator, a new virtual reality
   startup based out of Pier 59 Studios.
 date: 2018-09-14 15:19:59 +0000
