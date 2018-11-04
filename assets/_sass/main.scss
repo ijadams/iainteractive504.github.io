@@ -45,7 +45,7 @@ body {
 			color: black !important;
 		}
 		.more {
-			cursor: url('../images/arrow-down.png'), pointer;
+			cursor: inherit;
 		}
 	}
 	@media screen and (max-width: 768px) {
@@ -124,7 +124,7 @@ section {
 		left: 25vw;
 		height: 100%;
 		z-index: 12;
-		cursor: url('../images/arrow-down-w.png'), pointer;
+		cursor: inherit;
 		@media screen and (max-width: 768px) {
 			display: none;
 		}
@@ -180,6 +180,11 @@ section {
 			&:first-of-type {
 				text-transform: uppercase;
 				margin-right: 2rem;
+				@media screen and (max-width: 768px) {
+					margin: 0 auto;
+					display: block;
+					font-size: 2rem;
+				}
 			}
 		}
 	}
@@ -191,6 +196,10 @@ section {
 
 .slick-slide > div {
 	height: 100%;
+}
+
+.slide--color {
+	display: none;
 }
 
 @import 'navigation';

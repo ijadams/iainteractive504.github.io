@@ -27,9 +27,12 @@ layout: default
 				{% if post.slide_1_dark_toggle == true %}
 					<li class="active dark">
 				{% else %}
-			<li class="active">
+					<li class="active">
 				{% endif %}
-				{% for image in post.slide_1 %}
+			{% if post.slide_1_color %}
+				<span class="slide--color">{{post.slide_1_color}}</span>
+			{% endif %}
+			{% for image in post.slide_1 %}
 						{% if forloop.first %}
 							<div class="left" style="background-image: url('{{ image }}');">
 							</div>
@@ -45,6 +48,9 @@ layout: default
 					<li class="dark">
 						{% else %}
 					<li>
+					{% endif %}
+					{% if post.slide_2_color %}
+					<span class="slide--color">{{post.slide_2_color}}</span>
 					{% endif %}
 					{% for image in post.slide_2 %}
 					{% if forloop.first %}
@@ -64,6 +70,9 @@ layout: default
 				{% else %}
 				<li>
 				{% endif %}
+				{% if post.slide_3_color %}
+				<span class="slide--color">{{post.slide_3_color}}</span>
+				{% endif %}
 				{% for image in post.slide_3 %}
 				{% if forloop.first %}
 				<div class="left" style="background-image: url('{{ image }}');">
@@ -82,6 +91,9 @@ layout: default
 				{% else %}
 				<li>
 				{% endif %}
+				{% if post.slide_4_color %}
+				<span class="slide--color">{{post.slide_4_color}}</span>
+				{% endif %}
 				{% for image in post.slide_4 %}
 				{% if forloop.first %}
 				<div class="left" style="background-image: url('{{ image }}');">
@@ -99,6 +111,9 @@ layout: default
 				<li class="dark">
 				{% else %}
 				<li>
+				{% endif %}
+				{% if post.slide_5_color %}
+				<span class="slide--color">{{post.slide_5_color}}</span>
 				{% endif %}
 				{% for image in post.slide_5 %}
 				{% if forloop.first %}

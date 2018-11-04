@@ -5,7 +5,13 @@
 		z-index: 12 !important;
 	}
 	img {
-		max-width: 300px;
+		max-width: 750px;
+		@media screen and (max-width: 768px) {
+			max-width: 80vw;
+		}
+		@media screen and (max-width: 480px) {
+			max-width: 300px;
+		}
 	}
     .right {
 		background: black;
@@ -23,12 +29,12 @@
     }
 	@media screen and (max-width: 768px) {
 		img {
-			max-width: 225px;
+			max-width: 80vw;
 		}
 	}
 	@media screen and (max-width: 480px) {
 		img {
-			max-width: 150px;
+			max-width: 80vw;
 		}
 	}
 }

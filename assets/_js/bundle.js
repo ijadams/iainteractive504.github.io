@@ -47,7 +47,11 @@ $(document).ready(function () {
       let project = slick.$slider[0];
       next = $(project).find('li').eq(nextSlide + 1);
     }
-    next.hasClass('dark') ? $('body').addClass('dark') : $('body').removeClass('dark');
+    let color = $(next).children()[0].innerHTML;
+    if (!color) {
+      color = next.hasClass('dark') ? 'black' : 'white';
+    }
+    colorize(color);
   });
 
   // LOAD NEXT SLIDE
@@ -142,15 +146,14 @@ $(document).ready(function () {
     $('section.active ul').slick('slickGoTo', 0);
     $('section.active').removeClass('active');
     $('section').eq(activeIndex).addClass('active');
-    colorize();
     animating = false;
   };
 
-  const colorize = () => {
-    if ($('section.active').hasClass('dark') || $('section.active ul li.active').hasClass('dark')) {
-      $('body').addClass('dark');
-    } else {
-      $('body').removeClass('dark');
+  const colorize = (color) => {
+    if (color) {
+      $('#title').css('color', color);
+      $('section .description p').css('color', color);
+      $('body #toggle.button_container span').css('background', color);
     }
   };
 
