@@ -76,18 +76,18 @@ body.dark {
 	}
 
 	&.active {
+		span {
+			background: $color-active !important;
+		}
 		.top {
 			transform: translateY($span-height) translateX(0) rotate(45deg);
-			background: $color-active;
 		}
 		.middle {
 			opacity: 0;
-			background: $color-active;
 		}
 
 		.bottom {
 			transform: translateY(-$span-height) translateX(0) rotate(-45deg);
-			background: $color-active;
 		}
 	}
 
