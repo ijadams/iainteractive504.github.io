@@ -15,7 +15,7 @@ slide_2_dark_toggle: true
 slide_3:
 - "/uploads/section-two_02_01.jpg"
 - "/uploads/section-two_02_02.jpg"
-slide_3_dark_toggle: true
+slide_3_dark_toggle: false
 slide_4:
 - "/uploads/BingBang_Spreads_03_01.jpg"
 - "/uploads/BingBang_Spreads_03_02.jpg"
@@ -26,7 +26,7 @@ slide_5:
 slide_5_dark_toggle: false
 sort_order: 1
 slide_1_color: "#FFFFFF"
-slide_2_color: "#FFEFEF"
+slide_2_color: "#CCCCCC"
 slide_3_color: "#CCCCCC"
 slide_4_color: "#000000"
 slide_5_color: "#FFFFFF"
