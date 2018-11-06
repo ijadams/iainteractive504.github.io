@@ -36,6 +36,7 @@ $(document).ready(function () {
     {
       arrows: false,
       infinite: true,
+      lazyLoad: 'ondemand',
     }
   );
 

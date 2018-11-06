@@ -169,12 +169,8 @@ section {
 			}
 		}
 		@media screen and (max-width: 480px) {
-			background: rgba(0,0,0,0.5) !important;
 			bottom: 0;
 			padding: 1.6rem 0.4rem;
-			p {
-				color: white !important;
-			}
 		}
 		&.leave {
 			p {
