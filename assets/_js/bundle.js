@@ -1,4 +1,9 @@
+import {canvasDraw} from './draw.js';
+
 $(document).ready(function () {
+  $('canvas').each(function() {
+    canvasDraw(this);
+  });
 
   // SMOOTH PAGE LOAD
   $('body').removeClass('fade-out');
@@ -31,17 +36,28 @@ $(document).ready(function () {
   let animating = false;
   let sectionLength = $('section').length;
 
+  let lazyBgImg = (el) => {
+    let lazyBgImgs = $(el).find('.lazy--img');
+    lazyBgImgs.each((i) => {
+      let el = $(this);
+      if (!el.hasClass('loaded')) {
+        el.addClass('loaded');
+      }
+    });
+  };
+
   // SLICK CAROUSEL
-  $('.project--slide ul').slick(
-    {
-      arrows: false,
-      infinite: true,
-      lazyLoad: 'ondemand',
-    }
-  );
+  $('.project--slide ul').slick({
+    arrows: false,
+    infinite: true,
+    lazyLoad: 'ondemand',
+  });
 
   $('.project--slide ul').on('beforeChange', (event, slick, currentSlide, nextSlide) => {
     let next;
+    if (currentSlide !== nextSlide) {
+      lazyBgImg($(slick.$slides.get(nextSlide)));
+    }
     if (isDesktop()) {
       next = $('section.active ul li').eq(nextSlide + 1);
     } else {
@@ -184,4 +200,3 @@ $(document).ready(function () {
   };
 
 });
-

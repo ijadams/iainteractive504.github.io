@@ -133,6 +133,7 @@ section {
 		display: inline-block;
 		width: 50%;
 		height: 100%;
+		transition-delay: 1500ms;
 		transition: 1s cubic-bezier(0.420, 0.000, 0.600, 0.985);
 		background-repeat: no-repeat;
 		background-size: cover;
