@@ -1,9 +1,9 @@
 import {canvasDraw} from './draw.js';
 
 $(document).ready(function () {
-  $('canvas').each(function() {
-    canvasDraw(this);
-  });
+  // $('canvas').each(function() {
+  //   canvasDraw(this);
+  // });
 
   // SMOOTH PAGE LOAD
   $('body').removeClass('fade-out');
@@ -33,31 +33,24 @@ $(document).ready(function () {
   $('#intro').addClass('active');
 
   let activeIndex = 0;
-  let animating = false;
+  let animating = true;
   let sectionLength = $('section').length;
 
-  let lazyBgImg = (el) => {
-    let lazyBgImgs = $(el).find('.lazy--img');
-    lazyBgImgs.each((i) => {
-      let el = $(this);
-      if (!el.hasClass('loaded')) {
-        el.addClass('loaded');
-      }
-    });
-  };
+  // load second slide after animation
+  setTimeout(() => {
+    if (activeIndex === 0 && isDesktop()) {
+      navigate('next');
+    }
+  }, 4000);
 
   // SLICK CAROUSEL
   $('.project--slide ul').slick({
     arrows: false,
     infinite: true,
-    lazyLoad: 'ondemand',
   });
 
   $('.project--slide ul').on('beforeChange', (event, slick, currentSlide, nextSlide) => {
     let next;
-    if (currentSlide !== nextSlide) {
-      lazyBgImg($(slick.$slides.get(nextSlide)));
-    }
     if (isDesktop()) {
       next = $('section.active ul li').eq(nextSlide + 1);
     } else {
@@ -70,13 +63,6 @@ $(document).ready(function () {
     }
     colorize(color);
   });
-
-  // LOAD NEXT SLIDE
-  setTimeout(() => {
-    if (!animating && activeIndex === 0 && isDesktop()) {
-      navigate('next');
-    }
-  }, 4000);
 
   // LEFT PREV CLICK
   $('.left').click(() => {

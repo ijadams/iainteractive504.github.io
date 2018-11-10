@@ -133,7 +133,7 @@ section {
 		display: inline-block;
 		width: 50%;
 		height: 100%;
-		transition-delay: 1500ms;
+		transition-delay: 500ms;
 		transition: 1s cubic-bezier(0.420, 0.000, 0.600, 0.985);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -144,14 +144,14 @@ section {
 		cursor: url('../images/arrow-l-w.png'), pointer;
 		background-position: right;
 		&.leave {
-			transform: translateY(100%);
+			transform: translateY(150%);
 		}
 	}
 	.right {
 		cursor: url('../images/arrow-r-w.png'), pointer;
 		background-position: left;
 		&.leave {
-			transform: translateY(-100%);
+			transform: translateY(-150%);
 		}
 	}
 	.description {

@@ -1,6 +1,4 @@
 export function canvasDraw(myCanvas) {
-  console.log('here', $(myCanvas));
-  console.log('here', myCanvas);
   let ctx = myCanvas.getContext('2d');
 
   // Fill Window Width and Height
