@@ -1,4 +1,4 @@
-import {canvasDraw} from './draw.js';
+// import {canvasDraw} from './draw.js';
 
 $(document).ready(function () {
   // $('canvas').each(function() {
