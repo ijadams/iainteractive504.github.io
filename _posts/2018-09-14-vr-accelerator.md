@@ -6,12 +6,12 @@ description: Visual identity and style guide for the new virtual reality company
 date: 2018-09-14 15:19:59 +0000
 sort_order: 2
 slide_1:
-- "/uploads/VRA_Wordmark_02_01-2.jpg"
-- "/uploads/VRA_Wordmark_02_02-2.jpg"
+- "/uploads/VRA_Wordmark_01-1.jpg"
+- "/uploads/VRA_Wordmark_02-1.jpg"
 slide_1_dark_toggle: false
 slide_2:
-- "/uploads/VRA_Typography_01.jpg"
-- "/uploads/VRA_Typography_02.jpg"
+- "/uploads/VRA_Typography_01-1.jpg"
+- "/uploads/VRA_Typography_02-1.jpg"
 slide_2_dark_toggle: true
 slide_3:
 - "/uploads/VRA_Instagram_01.jpg"
