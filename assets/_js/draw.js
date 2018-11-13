@@ -29,7 +29,7 @@ export function canvasDraw(myCanvas) {
           canvasX = e.pageX - myCanvas.offsetLeft;
           canvasY = e.pageY - myCanvas.offsetTop;
           ctx.lineTo(canvasX, canvasY);
-          ctx.strokeStyle = '#000';
+          ctx.strokeStyle = '#fff';
           ctx.stroke();
         }
       })
@@ -81,4 +81,10 @@ export function canvasDraw(myCanvas) {
   document.body.addEventListener('touchmove', function (evt) {
     evt.preventDefault();
   }, false);
+}
+
+export function clearCanvas() {
+  let c = $('section.project--slide.active canvas')[0];
+  let ctx = c.getContext('2d');
+  ctx.clearRect(0, 0, c.width, c.height);
 }
