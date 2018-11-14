@@ -85,6 +85,8 @@ export function canvasDraw(myCanvas) {
 
 export function clearCanvas() {
   let c = $('section.project--slide.active canvas')[0];
-  let ctx = c.getContext('2d');
-  ctx.clearRect(0, 0, c.width, c.height);
+  if (c) {
+    let ctx = c.getContext('2d');
+    ctx.clearRect(0, 0, c.width, c.height);
+  }
 }
