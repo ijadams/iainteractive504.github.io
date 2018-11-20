@@ -1,5 +1,3 @@
-import {canvasDraw, clearCanvas} from './draw.js';
-
 $(document).ready(function () {
   // SMOOTH PAGE LOAD
   $('body').removeClass('fade-out');
@@ -63,7 +61,6 @@ $(document).ready(function () {
   // LEFT PREV CLICK
   $('.prev').click(() => {
     if (!animating && isDesktop()) {
-      clearCanvas();
       toggleSlide('previous');
     }
   });
@@ -71,7 +68,6 @@ $(document).ready(function () {
   // RIGHT NEXT CLICK
   $('.next').click(() => {
     if (!animating && isDesktop()) {
-      clearCanvas();
       toggleSlide('next');
     }
   });
@@ -99,7 +95,6 @@ $(document).ready(function () {
         scroll.isThrottled = false;
       }, scroll.throttleDuration);
       if (!animating) {
-        clearCanvas();
         if (e.originalEvent.wheelDelta > 0) {
           animating = true;
           navigate('previous');
@@ -183,9 +178,4 @@ $(document).ready(function () {
       }
     }
   };
-
-  $('canvas').each(function() {
-    canvasDraw(this);
-  });
-
 });
