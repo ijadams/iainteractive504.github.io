@@ -79,9 +79,9 @@ fields:
   label: slide 5 color
   name: slide_5_color
 pages:
+- _posts/2018-10-10-shrines.md
 - _posts/2018-09-14-bing-bang-jewelry.md
 - _posts/2018-09-14-vr-accelerator.md
-- _posts/2018-10-10-shrines.md
 - _posts/2018-09-14-blaaah-magazine.md
 - _posts/2018-10-10-games-gastronomy.md
 - _posts/2018-10-09-verizon-'new-perspective'-logo.md
