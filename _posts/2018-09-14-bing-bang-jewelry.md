@@ -2,7 +2,7 @@
 title: Bing Bang Jewelry
 project_title: Bing Bang Jewelry
 description: Art direction and photography for a ‘Golden Hour’ themed editorial featuring
-  a collection of gold jewelry on the beach.
+  a collection of BIng Bang's most popular gold jewelry.
 date: 2018-09-14 14:29:46 +0000
 slide_1:
 - "/uploads/section-two_01.jpg"
