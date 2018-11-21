@@ -4,7 +4,7 @@ project_title: Project Zero / Bill Gates Foundation
 description: Mini site designed to house three 360 films to raise awareness and donations
   for neglected tropical diseases.
 date: 2018-10-03 17:23:55 +0000
-sort_order: 5
+sort_order: 8
 slide_1:
 - "/uploads/BillGatesFoundation_01_01.jpg"
 - "/uploads/BillGatesFoundation_01_02.jpg"
