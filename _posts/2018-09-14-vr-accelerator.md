@@ -10,8 +10,8 @@ slide_1:
 - "/uploads/VRA_Wordmark_02-1.jpg"
 slide_1_dark_toggle: false
 slide_2:
-- "/uploads/VRA_Typography_01-1.jpg"
-- "/uploads/VRA_Typography_02-1.jpg"
+- "/uploads/VRA_Typography_01-2.jpg"
+- "/uploads/VRA_Typography_02-2.jpg"
 slide_2_dark_toggle: true
 slide_3:
 - "/uploads/VRA_Instagram_01.jpg"
