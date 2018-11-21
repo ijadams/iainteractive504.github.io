@@ -25,8 +25,8 @@ slide_5:
 - "/uploads/BLAAAH_Slide2_06.jpg"
 slide_5_dark_toggle: true
 sort_order: 6
-slide_1_color: ''
-slide_2_color: "#FFE670"
+slide_1_color: "#CCCCCC"
+slide_2_color: "#000000"
 slide_3_color: ''
 slide_4_color: ''
 slide_5_color: ''
