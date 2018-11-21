@@ -1,8 +1,8 @@
 ---
 title: PhotoPlus Expo 2016
 project_title: PhotoPlus Expo 2016
-description: Creative direction and design of the Photoplus Expo 2016 held at the
-  Javits Center in New York City.
+description: Art direction and design of the Photoplus Expo 2016 held at the Javits
+  Center in New York City.
 date: 2018-09-14 15:14:30 +0000
 sort_order: 7
 slide_1:
