@@ -1,8 +1,8 @@
 ---
 title: Games & Gastronomy
 project_title: Games & Gastronomy
-description: An editorial shoot for BLAAAH magazine that explains Roger Caillois'
-  categorization of games with the help of some playful dishes.
+description: Art direction and photography for BLAAAH magazine. The feature that explores
+  Roger Caillois' categorization of games through the language of food.
 date: 2018-10-10 17:53:38 +0000
 sort_order: 3
 slide_1:
