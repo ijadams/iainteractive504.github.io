@@ -1,6 +1,5 @@
 export function canvasDraw(myCanvas) {
   let ctx = myCanvas.getContext('2d');
-
   // Fill Window Width and Height
   myCanvas.width = window.innerWidth;
   myCanvas.height = window.innerHeight;
@@ -29,7 +28,8 @@ export function canvasDraw(myCanvas) {
           canvasX = e.pageX - myCanvas.offsetLeft;
           canvasY = e.pageY - myCanvas.offsetTop;
           ctx.lineTo(canvasX, canvasY);
-          ctx.strokeStyle = '#fff';
+          ctx.strokeStyle = $('.project--slide.active .slick-slide.slick-current.slick-active .slide--color')[0].innerHTML;
+          console.log('ctx.strokeStyle', ctx.strokeStyle);
           ctx.stroke();
         }
       })
