@@ -233,7 +233,9 @@ section {
 	display: none;
 }
 
-@import 'navigation';
-@import 'footer';
 @import 'syntaxHighlighter';
 @import 'intro';
+@import 'mobile';
+@import 'navigation';
+@import 'footer';
+
