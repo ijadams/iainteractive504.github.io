@@ -1,0 +1,138 @@
+{% assign sorted = site.posts | sort: 'sort_order' %}
+
+{% for post in sorted %}
+
+{% if post.title == 'INTRO - DO NOT DELETE' %}
+<section id="intro">
+	<div class="container">
+		<div class="left" style="background-color: {{post.intro_background}};">
+			<img src="{{post.intro_image_left}}">
+		</div>
+		<div class="right" style="background-color: {{post.intro_background}};">
+			<img src="{{post.intro_image_right}}">
+		</div>
+	</div>
+</section>
+
+{% else %}
+
+<section class="project--slide">
+	<div class="container">
+		<canvas class="more"></canvas>
+		<span class="next"></span>
+		<span class="prev"></span>
+		<ul>
+			{% if post.slide_1_dark_toggle == true %}
+			<li class="active dark">
+				{% else %}
+			<li class="active">
+				{% endif %}
+				{% if post.slide_1_color %}
+				<span class="slide--color">{{post.slide_1_color}}</span>
+				{% endif %}
+				{% for image in post.slide_1 %}
+				{% if forloop.first %}
+				<div class="left" style="background-image: url('{{ image }}');">
+				</div>
+				{% else %}
+				<div class="right" style="background-image: url('{{ image }}');">
+				</div>
+				{% endif %}
+				{% endfor %}
+			</li>
+
+			{% if post.slide_2.size > 0 %}
+			{% if post.slide_2_dark_toggle == true %}
+			<li class="dark">
+				{% else %}
+			<li>
+				{% endif %}
+				{% if post.slide_2_color %}
+				<span class="slide--color">{{post.slide_2_color}}</span>
+				{% endif %}
+				{% for image in post.slide_2 %}
+				{% if forloop.first %}
+				<div class="left" style="background-image: url('{{ image }}');">
+				</div>
+				{% else %}
+				<div class="right" style="background-image: url('{{ image }}');">
+				</div>
+				{% endif %}
+				{% endfor %}
+			</li>
+			{% endif %}
+
+			{% if post.slide_3.size > 0 %}
+			{% if post.slide_3_dark_toggle == true %}
+			<li class="dark">
+				{% else %}
+			<li>
+				{% endif %}
+				{% if post.slide_3_color %}
+				<span class="slide--color">{{post.slide_3_color}}</span>
+				{% endif %}
+				{% for image in post.slide_3 %}
+				{% if forloop.first %}
+				<div class="left" style="background-image: url('{{ image }}');">
+				</div>
+				{% else %}
+				<div class="right" style="background-image: url('{{ image }}');">
+				</div>
+				{% endif %}
+				{% endfor %}
+			</li>
+			{% endif %}
+
+			{% if post.slide_4.size > 0 %}
+			{% if post.slide_4_dark_toggle == true %}
+			<li class="dark">
+				{% else %}
+			<li>
+				{% endif %}
+				{% if post.slide_4_color %}
+				<span class="slide--color">{{post.slide_4_color}}</span>
+				{% endif %}
+				{% for image in post.slide_4 %}
+				{% if forloop.first %}
+				<div class="left" style="background-image: url('{{ image }}');">
+				</div>
+				{% else %}
+				<div class="right" style="background-image: url('{{ image }}');">
+				</div>
+				{% endif %}
+				{% endfor %}
+			</li>
+			{% endif %}
+
+			{% if post.slide_5.size > 0 %}
+			{% if post.slide_5_dark_toggle == true %}
+			<li class="dark">
+				{% else %}
+			<li>
+				{% endif %}
+				{% if post.slide_5_color %}
+				<span class="slide--color">{{post.slide_5_color}}</span>
+				{% endif %}
+				{% for image in post.slide_5 %}
+				{% if forloop.first %}
+				<div class="left" style="background-image: url('{{ image }}');">
+				</div>
+				{% else %}
+				<div class="right" style="background-image: url('{{ image }}');">
+				</div>
+				{% endif %}
+				{% endfor %}
+			</li>
+			{% endif %}
+
+		</ul>
+		<div class="description">
+			<p>{{ post.project_title }}</p>
+			<p>{{ post.description }}</p>
+		</div>
+	</div>
+</section>
+
+{% endif %}
+
+{% endfor %}
