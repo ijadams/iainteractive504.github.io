@@ -30,5 +30,7 @@ slide_2_color: "#000000"
 slide_3_color: ''
 slide_4_color: ''
 slide_5_color: ''
+mobile_images:
+- "/uploads/localhost_4000_(iPad Pro) (7).png"
 
 ---
