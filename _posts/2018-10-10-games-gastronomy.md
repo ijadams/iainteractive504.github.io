@@ -30,5 +30,7 @@ slide_5:
 - "/uploads/GastronomyGames_04_02.jpg"
 slide_5_dark_toggle: true
 slide_5_color: ''
+mobile_images:
+- "/uploads/localhost_4000_(iPad Pro) (5).png"
 
 ---
