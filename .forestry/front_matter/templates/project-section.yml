@@ -83,7 +83,6 @@ fields:
   label: Mobile Images
   description: 1200x800
 pages:
-- _posts/2018-10-03-project-zero--bill-gates-foundation.md
 - _posts/2018-10-03-richards-nyc.md
 - _posts/2018-09-14-pdn-edu.md
 - _posts/2018-10-09-verizon-'new-perspective'-logo.md
@@ -95,3 +94,4 @@ pages:
 - _posts/2018-10-10-shrines.md
 - _posts/2018-09-14-photoplus-expo-2016.md
 - _posts/2018-09-14-vr-accelerator.md
+- _posts/2018-10-03-project-zero--bill-gates-foundation.md
