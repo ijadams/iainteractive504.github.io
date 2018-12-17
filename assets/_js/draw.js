@@ -87,6 +87,8 @@ export function clearCanvas() {
   let c = $('section.project--slide.active canvas')[0];
   if (c) {
     let ctx = c.getContext('2d');
+    console.log(ctx);
+    ctx.closePath();
     ctx.clearRect(0, 0, c.width, c.height);
   }
 }

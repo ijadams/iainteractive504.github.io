@@ -63,14 +63,16 @@ $(document).ready(function () {
   // LEFT PREV CLICK
   $('.prev').click(() => {
     if (!animating && isDesktop()) {
-      toggleSlide('previous');
+    clearCanvas();
+    toggleSlide('previous');
     }
   });
 
   // RIGHT NEXT CLICK
   $('.next').click(() => {
     if (!animating && isDesktop()) {
-      toggleSlide('next');
+    clearCanvas();
+    toggleSlide('next');
     }
   });
 
