@@ -22,5 +22,7 @@ slide_4_color: ''
 slide_5: []
 slide_5_dark_toggle: false
 slide_5_color: ''
+mobile_images:
+- "/uploads/ezgif-1-034c53da2035.gif"
 
 ---
