@@ -32,5 +32,10 @@ slide_4_color: ''
 slide_5_color: ''
 mobile_images:
 - "/uploads/localhost_4000_(iPad Pro) (2).png"
+slide_1_mobile: "/uploads/localhost_4000_(iPad Pro) (2).png"
+slide_2_mobile: ''
+slide_3_mobile: ''
+slide_4_mobile: ''
+slide_5_mobile: ''
 
 ---
