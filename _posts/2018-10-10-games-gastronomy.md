@@ -9,7 +9,7 @@ slide_1:
 - "/uploads/GastronomyGames_Cover_01-1.jpg"
 - "/uploads/GastronomyGames_Cover_02-1.jpg"
 slide_1_dark_toggle: false
-slide_1_color: ''
+slide_1_color: "#FFFFFF"
 slide_2:
 - "/uploads/GastronomyGames_01_01.jpg"
 - "/uploads/GastronomyGames_01_02.jpg"
