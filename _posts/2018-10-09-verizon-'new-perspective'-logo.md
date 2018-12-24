@@ -21,8 +21,13 @@ slide_4_dark_toggle: false
 slide_4_color: ''
 slide_5: []
 slide_5_dark_toggle: false
-slide_5_color: ''
+slide_5_color: "#FFFFFF"
 mobile_images:
 - "/uploads/ezgif-1-034c53da2035.gif"
+slide_1_mobile: "/uploads/ezgif-1-034c53da2035-1.gif"
+slide_2_mobile: ''
+slide_3_mobile: ''
+slide_4_mobile: ''
+slide_5_mobile: ''
 
 ---
