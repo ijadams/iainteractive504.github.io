@@ -14,22 +14,22 @@ slide_2:
 - "/uploads/GastronomyGames_01_01.jpg"
 - "/uploads/GastronomyGames_01_02.jpg"
 slide_2_dark_toggle: true
-slide_2_color: ''
+slide_2_color: "#FFFFFF"
 slide_3:
 - "/uploads/GastronomyGames_02_01.jpg"
 - "/uploads/GastronomyGames_02_02.jpg"
 slide_3_dark_toggle: true
-slide_3_color: ''
+slide_3_color: "#000000"
 slide_4:
 - "/uploads/GastronomyGames_03_01.jpg"
 - "/uploads/GastronomyGames_03_02.jpg"
 slide_4_dark_toggle: true
-slide_4_color: ''
+slide_4_color: "#000000"
 slide_5:
 - "/uploads/GastronomyGames_04_01.jpg"
 - "/uploads/GastronomyGames_04_02.jpg"
 slide_5_dark_toggle: true
-slide_5_color: ''
+slide_5_color: "#000000"
 mobile_images:
 - "/uploads/localhost_4000_(iPad Pro) (5).png"
 slide_1_mobile: "/uploads/localhost_4000_(iPad Pro) (5).png"
