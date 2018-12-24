@@ -30,11 +30,11 @@ slide_2_color: "#000000"
 slide_3_color: "#FFFFFF"
 slide_4_color: "#000000"
 slide_5_color: "#FFFFFF"
-mobile_images:
-- "/uploads/localhost_4000_(iPad Pro) (3).png"
-- "/uploads/Screen Shot 2018-12-21 at 10.21.39 PM.png"
-- "/uploads/Screen Shot 2018-12-21 at 10.21.45 PM.png"
-- "/uploads/Screen Shot 2018-12-21 at 10.21.33 PM.png"
-- "/uploads/Screen Shot 2018-12-21 at 10.21.24 PM.png"
+mobile_images: []
+slide_1_mobile: "/uploads/localhost_4000_(iPad Pro) (3).png"
+slide_2_mobile: "/uploads/Screen Shot 2018-12-21 at 10.21.45 PM.png"
+slide_3_mobile: "/uploads/Screen Shot 2018-12-21 at 10.21.39 PM.png"
+slide_4_mobile: "/uploads/Screen Shot 2018-12-21 at 10.21.33 PM.png"
+slide_5_mobile: "/uploads/Screen Shot 2018-12-21 at 10.21.24 PM.png"
 
 ---
