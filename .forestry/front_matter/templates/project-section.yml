@@ -29,9 +29,6 @@ fields:
   name: slide_1_mobile
   label: Slide 1 Mobile
   description: Mobile Image for Slide 1
-- type: boolean
-  name: slide_1_dark_toggle
-  label: Slide 1 Dark Toggle
 - type: color
   config:
     color_format: Hex
@@ -44,9 +41,6 @@ fields:
 - type: file
   name: slide_2_mobile
   label: Slide 2 Mobile
-- type: boolean
-  name: slide_2_dark_toggle
-  label: Slide 2 Dark Toggle
 - type: color
   config:
     color_format: Hex
@@ -58,9 +52,6 @@ fields:
 - type: file
   name: slide_3_mobile
   label: slide_3_mobile
-- type: boolean
-  name: slide_3_dark_toggle
-  label: Slide 3 Dark Toggle
 - type: color
   config:
     color_format: Hex
@@ -72,9 +63,6 @@ fields:
 - type: file
   name: slide_4_mobile
   label: slide_4_mobile
-- type: boolean
-  name: slide_4_dark_toggle
-  label: Slide 4 Dark Toggle
 - type: color
   config:
     color_format: Hex
@@ -86,9 +74,6 @@ fields:
 - type: file
   name: slide_5_mobile
   label: slide_5_mobile
-- type: boolean
-  name: slide_5_dark_toggle
-  label: Slide 5 Dark Toggle
 - type: color
   config:
     color_format: Hex
