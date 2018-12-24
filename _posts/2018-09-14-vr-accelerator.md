@@ -25,11 +25,11 @@ slide_5:
 - "/uploads/VRA_Stationary_01-1.jpg"
 - "/uploads/VRA_Stationary_02-1.jpg"
 slide_5_dark_toggle: true
-slide_1_color: ''
-slide_2_color: ''
-slide_3_color: ''
-slide_4_color: ''
-slide_5_color: ''
+slide_1_color: "#FFFFFF"
+slide_2_color: "#000000"
+slide_3_color: "#000000"
+slide_4_color: "#000000"
+slide_5_color: "#000000"
 mobile_images:
 - "/uploads/localhost_4000_(iPad Pro) (2).png"
 slide_1_mobile: "/uploads/localhost_4000_(iPad Pro) (2).png"
