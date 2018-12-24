@@ -26,7 +26,7 @@ slide_5:
 slide_5_dark_toggle: false
 sort_order: 1
 slide_1_color: "#FFFFFF"
-slide_2_color: "#000000"
+slide_2_color: "#FFFFFF"
 slide_3_color: "#FFFFFF"
 slide_4_color: "#000000"
 slide_5_color: "#FFFFFF"
