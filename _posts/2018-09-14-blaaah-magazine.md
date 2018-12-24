@@ -25,11 +25,11 @@ slide_5:
 - "/uploads/BLAAAH_Slide2_06.jpg"
 slide_5_dark_toggle: true
 sort_order: 6
-slide_1_color: "#CCCCCC"
+slide_1_color: "#FFFFFF"
 slide_2_color: "#000000"
-slide_3_color: ''
-slide_4_color: ''
-slide_5_color: ''
+slide_3_color: "#000000"
+slide_4_color: "#000000"
+slide_5_color: "#000000"
 mobile_images:
 - "/uploads/localhost_4000_(iPad Pro) (7).png"
 slide_1_mobile: "/uploads/localhost_4000_(iPad Pro) (7).png"
