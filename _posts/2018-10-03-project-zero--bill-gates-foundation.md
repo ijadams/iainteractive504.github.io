@@ -23,12 +23,17 @@ slide_4:
 slide_4_dark_toggle: false
 slide_5: []
 slide_5_dark_toggle: false
-slide_1_color: ''
-slide_2_color: ''
-slide_3_color: ''
-slide_4_color: ''
+slide_1_color: "#FFFFFF"
+slide_2_color: "#FFFFFF"
+slide_3_color: "#FFFFFF"
+slide_4_color: "#FFFFFF"
 slide_5_color: ''
 mobile_images:
 - "/uploads/localhost_4000_(iPad Pro) (9).png"
+slide_1_mobile: ''
+slide_2_mobile: ''
+slide_3_mobile: ''
+slide_4_mobile: ''
+slide_5_mobile: ''
 
 ---
