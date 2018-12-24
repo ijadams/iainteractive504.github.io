@@ -25,11 +25,11 @@ slide_5:
 - "/uploads/PhotoplusExpo2016_01_01.jpg"
 - "/uploads/PhotoplusExpo2016_01_02.jpg"
 slide_5_dark_toggle: true
-slide_1_color: ''
-slide_2_color: ''
-slide_3_color: ''
-slide_4_color: ''
-slide_5_color: ''
+slide_1_color: "#FFFFFF"
+slide_2_color: "#FFFFFF"
+slide_3_color: "#FFFFFF"
+slide_4_color: "#000000"
+slide_5_color: "#000000"
 mobile_images:
 - "/uploads/localhost_4000_(iPad Pro) (8).png"
 slide_1_mobile: "/uploads/localhost_4000_(iPad Pro) (8).png"
