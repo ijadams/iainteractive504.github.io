@@ -29,7 +29,6 @@ export function canvasDraw(myCanvas) {
           canvasY = e.pageY - myCanvas.offsetTop;
           ctx.lineTo(canvasX, canvasY);
           ctx.strokeStyle = $('.project--slide.active .slick-slide.slick-current.slick-active .slide--color')[0].innerHTML;
-          console.log('ctx.strokeStyle', ctx.strokeStyle);
           ctx.stroke();
         }
       })
@@ -87,7 +86,6 @@ export function clearCanvas() {
   let c = $('section.project--slide.active canvas')[0];
   if (c) {
     let ctx = c.getContext('2d');
-    console.log(ctx);
     ctx.closePath();
     ctx.clearRect(0, 0, c.width, c.height);
   }
