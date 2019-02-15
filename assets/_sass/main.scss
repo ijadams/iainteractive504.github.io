@@ -48,7 +48,16 @@ body {
 			cursor: inherit;
 		}
 	}
+	#mobile {
+		display: none;
+	}
 	@media screen and (max-width: 768px) {
+		#desktop {
+			display: none;
+		}
+		#mobile {
+			display: block;
+		}
 		overflow-y: scroll;
 		header {
 			position: fixed;
@@ -224,7 +233,9 @@ section {
 	display: none;
 }
 
-@import 'navigation';
-@import 'footer';
 @import 'syntaxHighlighter';
 @import 'intro';
+@import 'mobile';
+@import 'navigation';
+@import 'footer';
+

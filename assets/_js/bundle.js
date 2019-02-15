@@ -1,3 +1,5 @@
+import {canvasDraw, clearCanvas} from './draw';
+
 $(document).ready(function () {
   // SMOOTH PAGE LOAD
   $('body').removeClass('fade-out');
@@ -61,14 +63,16 @@ $(document).ready(function () {
   // LEFT PREV CLICK
   $('.prev').click(() => {
     if (!animating && isDesktop()) {
-      toggleSlide('previous');
+    clearCanvas();
+    toggleSlide('previous');
     }
   });
 
   // RIGHT NEXT CLICK
   $('.next').click(() => {
     if (!animating && isDesktop()) {
-      toggleSlide('next');
+    clearCanvas();
+    toggleSlide('next');
     }
   });
 
@@ -95,6 +99,7 @@ $(document).ready(function () {
         scroll.isThrottled = false;
       }, scroll.throttleDuration);
       if (!animating) {
+        clearCanvas();
         if (e.originalEvent.wheelDelta > 0) {
           animating = true;
           navigate('previous');
@@ -178,4 +183,8 @@ $(document).ready(function () {
       }
     }
   };
+
+  $('canvas.more').each(function() {
+    canvasDraw(this);
+  });
 });
