@@ -32,10 +32,10 @@
 				{% endif %}
 				{% for image in post.slide_1 %}
 				{% if forloop.first %}
-				<div class="left" style="background-image: url('{{ image }}');">
+				<div class="left" data-lazy="{{ image }}">
 				</div>
 				{% else %}
-				<div class="right" style="background-image: url('{{ image }}');">
+				<div class="right" data-lazy="{{ image }}">
 				</div>
 				{% endif %}
 				{% endfor %}
@@ -52,10 +52,10 @@
 				{% endif %}
 				{% for image in post.slide_2 %}
 				{% if forloop.first %}
-				<div class="left" style="background-image: url('{{ image }}');">
+				<div class="left" data-lazy="{{ image }}">
 				</div>
 				{% else %}
-				<div class="right" style="background-image: url('{{ image }}');">
+				<div class="right" data-lazy="{{ image }}">
 				</div>
 				{% endif %}
 				{% endfor %}
@@ -73,10 +73,10 @@
 				{% endif %}
 				{% for image in post.slide_3 %}
 				{% if forloop.first %}
-				<div class="left" style="background-image: url('{{ image }}');">
+				<div class="left" data-lazy="{{ image }}">
 				</div>
 				{% else %}
-				<div class="right" style="background-image: url('{{ image }}');">
+				<div class="right" data-lazy="{{ image }}">
 				</div>
 				{% endif %}
 				{% endfor %}
@@ -94,10 +94,10 @@
 				{% endif %}
 				{% for image in post.slide_4 %}
 				{% if forloop.first %}
-				<div class="left" style="background-image: url('{{ image }}');">
+				<div class="left" data-lazy="{{ image }}">
 				</div>
 				{% else %}
-				<div class="right" style="background-image: url('{{ image }}');">
+				<div class="right" data-lazy="{{ image }}">
 				</div>
 				{% endif %}
 				{% endfor %}
@@ -115,10 +115,10 @@
 				{% endif %}
 				{% for image in post.slide_5 %}
 				{% if forloop.first %}
-				<div class="left" style="background-image: url('{{ image }}');">
+				<div class="left" data-lazy="{{ image }}">
 				</div>
 				{% else %}
-				<div class="right" style="background-image: url('{{ image }}');">
+				<div class="right" data-lazy="{{ image }}">
 				</div>
 				{% endif %}
 				{% endfor %}

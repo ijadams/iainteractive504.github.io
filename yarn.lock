@@ -7139,10 +7139,9 @@ slice-ansi@1.0.0:
   dependencies:
     is-fullwidth-code-point "^2.0.0"
 
-slick-carousel@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
-  integrity sha512-XB9Ftrf2EEKfzoQXt3Nitrt/IPbT+f1fgqBdoxO3W/+JYvtEOW6EgxnWfr9GH6nmULv7Y2tPmEX3koxThVmebA==
+"slick-carousel@https://github.com/kenwheeler/slick.git":
+  version "1.9.0"
+  resolved "https://github.com/kenwheeler/slick.git#a2aa3fec335c50aceb58f6ef6d22df8e5f3238e1"
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

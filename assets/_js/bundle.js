@@ -43,6 +43,7 @@ $(document).ready(function () {
   $('.project--slide ul').slick({
     arrows: false,
     infinite: true,
+    lazyLoad: 'ondemand'
   });
 
   $('.project--slide ul').on('beforeChange', (event, slick, currentSlide, nextSlide) => {
